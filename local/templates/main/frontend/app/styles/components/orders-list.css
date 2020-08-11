@@ -1,0 +1,97 @@
+@import "../media.css";
+
+.orders-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 38px -15px 0;
+}
+.orders-list__item {
+    width: 50%;
+    min-width: 50%;
+    padding: 0 15px;
+    @media(--tablet) {
+        width: 100%;
+        min-width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 36px;
+        }
+    }
+}
+.orders-item {
+    position: relative;
+    &--pay {
+        padding-right: 220px;
+        @media(--tablet) {
+            padding-right: 0;
+            .pl-0 .btn-primary {
+                position: static;
+            }
+        }
+    }
+}
+.orders-item__props {
+    dl {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        font-size: 14px;
+        @media(max-width: 400px) {
+            /*justify-content: space-between;*/
+        }
+        @media(--mobile-xs) {
+            font-size: 13px;
+        }
+    }
+    dt {
+        font-weight: 500;
+        color: var(--placeholder);
+    }
+    dd {
+        font-weight: 600;
+        margin-left: 4px;
+        /*white-space: nowrap;*/
+    }
+}
+.orders-item__title {
+    margin-bottom: 14px;
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    @media(--mobile-xs) {
+        font-size: 30px;
+    }
+}
+.orders-item__subtitle {
+    margin-bottom: 34px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--c-orange);
+    @media(--tablet) {
+        margin-bottom: 20px;
+    }
+    @media(--mobile-xs) {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+}
+.orders-item__status {
+    margin-top: 22px;
+}
+.orders-item__pay {
+    position: absolute;
+    top: 46px;
+    right: 0;
+    display: block;
+    width: 220px;
+    @media(--mobile-s) {
+        position: static;
+        margin-top: 26px;
+    }
+}
+.sdek_pvzAddr {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}

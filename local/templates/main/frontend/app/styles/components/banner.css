@@ -1,0 +1,26 @@
+@import '../media.css';
+
+.banner {
+    position: relative;
+    max-width: 890px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.banner__head {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.banner__content {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    @media(--mobile-xs) {
+        padding: 0 17px;
+    }
+}
+.banner__button {
+    width: 250px;
+    margin: 42px auto 0;
+}

@@ -1,0 +1,42 @@
+@import "../media.css";
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vh - 221px);
+    overflow: hidden;
+    @media(--tablet-above) {
+        height: calc(100vh - 89px);
+    }
+    @media(--mobile-s) {
+        height: calc(100vh - 60px);
+    }
+    @media(--mobile-xs) {
+        height: calc(100vh - 59px);
+    }
+}
+.hero__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+    text-align: center;
+}
+.hero__footer {
+    padding-bottom: 20px;
+    text-align: center;
+    @media(orientation: landscape) and (max-height: 400px) {
+        display: none;
+    }
+}
+.hero__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

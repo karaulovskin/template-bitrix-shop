@@ -1,0 +1,97 @@
+<% const data = {
+    'title': 'Список страниц верстки',
+    'flowContainerClass' : ''
+} %>
+
+<div class="container">
+    <h1>Список страниц верстки</h1>
+
+    <ul>
+        <li>
+            <a href="main.html">Главная</a>
+        </li>
+        <li>
+            <a href="catalog.html">Каталог</a>
+        </li>
+        <li>
+            <a href="catalog-section.html">Каталог-раздел</a>
+        </li>
+        <li>
+            <a href="card.html">Карточка товара</a>
+        </li>
+        <li>
+            <a href="card-sound.html">Карточка товара - Звук</a>
+        </li>
+        <li>
+            <a href="basket.html">Корзина</a>
+        </li>
+        <li>
+            <a href="delivery.html">Доставка и оплата</a>
+        </li>
+        <li>
+            <a href="text.html">Текстовая</a>
+        </li>
+        <li>
+            <a href="stocks.html">Акции</a>
+        </li>
+        <li>
+            <a href="stocks-inner.html">Акция</a>
+        </li>
+        <li>
+            <a href="personal.html">Кабинет-профиль</a>
+        </li>
+        <li>
+            <a href="personal-orders.html">Кабинет-заказы</a>
+        </li>
+        <li>
+            <a href="personal-orders-inner.html">Кабинет-заказ</a>
+        </li>
+        <li>
+            <a href="order-individual.html">Оформить заказ - физическое лицо</a>
+        </li>
+        <li>
+            <a href="order-entity.html">Оформить заказ - юридическое лицо</a>
+        </li>
+        <li>
+            <a href="typography.html">Типовая</a>
+        </li>
+        <li>
+            <a href="contacts.html">Контакты</a>
+        </li>
+        <li>
+            <a href="about.html">О компании</a>
+        </li>
+        <li>
+            <a href="slider.html">Слайдер</a>
+        </li>
+        <li>
+            <a href="typography.html#anchor">Якорь</a>
+        </li>
+        <li>
+            Модальные окна
+            <ul>
+                <li>
+                    <!-- data-modal-open - для открытия модального окна-->
+                    <a href="#call" data-modal-open>Заказать звонок</a>
+                </li>
+                <li>
+                    <a href="#callSuccess" data-modal-open>Заявка отправлена</a>
+                </li>
+                <li>
+                    <a href="#coming" data-modal-open>Сообщить о поступлении</a>
+                </li>
+                <li>
+                    <a href="#login" data-modal-open>Войти в кабинет</a>
+                </li>
+                <li>
+                    <a href="#loginSMS" data-modal-open>Введите код из sms</a>
+                </li>
+                <li>
+                    <a href="#loginSMS2" data-modal-open>Введите код из sms - запросить код</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<%- require("../layouts/modals.ejs")() %>

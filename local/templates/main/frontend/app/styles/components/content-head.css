@@ -1,0 +1,20 @@
+@import '../media.css';
+
+.content-head {
+    position: relative;
+    padding: 48px 0 38px;
+    @media (--mobile-xs) {
+        padding-bottom: 14px;
+    }
+}
+.content-head__title {
+    text-align: center;
+}
+.content-head__subtitle {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 80px;
+    @media(--mobile) {
+        padding: 0 24px;
+    }
+}

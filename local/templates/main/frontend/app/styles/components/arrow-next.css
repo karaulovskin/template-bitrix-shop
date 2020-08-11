@@ -1,0 +1,23 @@
+@import "../media.css";
+
+.arrow-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    .arrow-next__icon {
+        width: 7px;
+        height: 12px;
+        fill: var(--c-black);
+        stroke: transparent;
+    }
+    &:focus {
+        outline: none;
+        .arrow-next__icon {
+            fill: var(--c-orange);
+        }
+    }
+}

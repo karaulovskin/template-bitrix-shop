@@ -1,0 +1,52 @@
+@import "../media.css";
+
+.footer-element {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @media(--mobile) {
+        display: none;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#footElement1 {
+    top: 0;
+    transform: translate(-440px, -65px);
+    width: 425px;
+    height: 259px;
+}
+#footElement2 {
+    top: 0;
+    transform: translate(-347px, 34px);
+    width: 28px;
+    height: 30px;
+}
+#footElement3 {
+    top: 0;
+    transform: translate(-540px, 142px);
+    width: 97px;
+    height: 104px;
+}
+#footElement4 {
+    bottom: 0;
+    transform: translate(574px, -302px);
+    width: 47px;
+    height: 46px;
+}
+#footElement5 {
+    bottom: 0;
+    transform: translate(426px, -104px);
+    width: 255px;
+    height: 155px;
+}
+#footElement6 {
+    bottom: 0;
+    transform: translate(358px, -69px);
+    width: 56px;
+    height: 59px;
+}

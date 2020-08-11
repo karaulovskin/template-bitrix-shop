@@ -1,0 +1,29 @@
+<nav class="header-nav">
+    <ul class="header-nav-list">
+        <% const list = [
+            {
+                title: 'Акции'
+            },
+            {
+                title: 'О компании'
+            },
+            {
+                title: 'Новости'
+            },
+            {
+                title: 'Доставка и оплата'
+            },
+            {
+                title: 'Наши магазины'
+            },
+            {
+                title: 'Контакты'
+            }
+        ]%>
+        <% list.forEach(function (item) { %>
+            <li class="header-nav-list__item">
+                <a href="#" class="header-nav-list__link"><%= item.title%></a>
+            </li>
+        <% }) %>
+    </ul>
+</nav>

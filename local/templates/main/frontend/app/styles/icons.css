@@ -1,0 +1,86 @@
+.i-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: currentColor;
+    &--location {
+        width: 14px;
+        height: 19px;
+    }
+}
+
+.icon-link {
+    text-decoration: none;
+
+    &:not([href]) {
+        span {
+            text-decoration: none !important;
+        }
+    }
+
+    > * {
+        vertical-align: middle;
+    }
+
+    &:hover {
+        text-decoration: none;
+        span {
+            text-decoration: none;
+        }
+    }
+
+    .i-icon {
+        margin-right: 5px;
+
+        * {
+            fill: currentColor;
+        }
+    }
+
+    span {
+        text-decoration: underline;
+        transition: .2s;
+    }
+}
+
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border: 1px solid var(--c-orange);
+    border-radius: 100%;
+    svg {
+        fill: var(--c-orange);
+        stroke: var(--c-orange);
+    }
+}
+
+.cross {
+    position: relative;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        transform: rotate(-45deg);
+        margin: auto;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+    }
+
+    &::after {
+        transform: rotate(45deg);
+    }
+}

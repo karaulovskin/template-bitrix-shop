@@ -1,0 +1,22 @@
+@import "../media.css";
+
+.circle-counter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    @media(--mobile-xs) {
+        width: 30px;
+        height: 30px;
+    }
+}
+.circle-counter__circle {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    stroke-dashoffset: 182.212;
+    transition: stroke-dashoffset 1s;
+    /*opacity: 0;*/
+}

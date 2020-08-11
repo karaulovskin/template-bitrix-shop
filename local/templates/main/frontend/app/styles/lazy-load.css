@@ -1,0 +1,14 @@
+[data-src],
+[data-background-image] {
+    &:not(.lazy-loaded),
+    &.lazy-error {
+        background-image: url('./images/placeholder-img.svg');
+        background-color: #efefef;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80px;
+    }
+    &.lazy-error {
+        background-image: url('./images/placeholder-broken-img.svg') !important;
+    }
+}

@@ -1,0 +1,195 @@
+@import "../media.css";
+
+.toy-list-wrapper {
+    &--margin-top {
+        margin-top: 28px;
+        @media(--mobile-xs) {
+            margin-top: -20px;
+        }
+    }
+    &--vertical {
+        position: absolute;
+        top: 124px;
+        right: -45px;
+        @media(--mobile-xs) {
+            top: 64px;
+            right: -35px;
+        }
+    }
+    &.swiper-container {
+         width: 100%;
+    }
+}
+.toy-list {
+    display: flex;
+    align-items: center;
+    transform: translateY(-86px);
+    margin: -5px;
+    @media(--mobile-xs) {
+        transform: translateY(-22px);
+        margin: -2.5px;
+    }
+    &--vertical {
+        flex-direction: column;
+    }
+    &.swiper-wrapper {
+
+    }
+}
+.toy-list__item {
+    padding: 5px;
+    @media(--mobile-xs) {
+        padding: 2.5px;
+    }
+    &.swiper-slide {
+        width: auto;
+    }
+    &[data-animate-toy-controls-item] {
+        cursor: pointer;
+        svg {
+            fill: var(--c-black);
+        }
+        .i-icon--lamp {
+            fill: transparent;
+            stroke: var(--c-black);
+        }
+        &.active {
+            .toy-item__link {
+                background-color: var(--c-orange);
+                border-color: var(--c-orange);
+                svg {
+                    fill: white;
+                }
+                .i-icon--lamp {
+                    fill: transparent;
+                    stroke: white;
+                }
+            }
+        }
+    }
+    &:before {
+        content: none;
+    }
+}
+.toy-item {
+    width: 100px;
+    height: 100px;
+    @media(--desktop-above) {
+        width: 80px;
+        height: 80px;
+    }
+    @media(--mobile-xs) {
+        width: 53px;
+        height: 53px;
+        .toy-item-picture {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &--big {
+        width: 120px;
+        height: 120px;
+        .toy-item-picture {
+            width: 90px;
+            height: 90px;
+        }
+        @media(--desktop-above) {
+            width: 100px;
+            height: 100px;
+            .toy-item-picture {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        @media(--mobile-xs) {
+            width: 53px;
+            height: 53px;
+            .toy-item-picture {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    &--small {
+        width: 70px;
+        height: 70px;
+        .toy-item-picture {
+            width: 48px;
+            height: 48px;
+        }
+        @media(--desktop-above) {
+            width: 60px;
+            height: 60px;
+            .toy-item-picture {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        @media(--mobile-xs) {
+            width: 35px;
+            height: 35px;
+            .toy-item-picture {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    &--black {
+        @media(--mobile-xs) {
+            width: 60px;
+            height: 60px;
+            .toy-item-picture {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .toy-item__link {
+            background-color: transparent;
+            border: 1px solid var(--c-black);
+        }
+    }
+}
+.toy-item__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 100%;
+    pointer-events: none;
+    .i-icon {
+        color: transparent;
+        &--smell {
+            width: 20px;
+            height: 26px;
+            @media(--mobile-xs) {
+                width: 11px;
+                height: 16px;
+            }
+        }
+        &--sound {
+            width: 35px;
+            height: 26px;
+            @media(--mobile-xs) {
+                width: 19px;
+                height: auto;
+            }
+        }
+        &--lamp {
+            width: 24px;
+            height: 30px;
+            @media(--mobile-xs) {
+                width: 13px;
+                height: 17px;
+            }
+        }
+    }
+}
+.toy-item-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+}

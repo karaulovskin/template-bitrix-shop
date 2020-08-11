@@ -1,0 +1,383 @@
+<section class="section-basket bg-beige-bright">
+    <div class="container">
+        <div class="content-head">
+            <%- require("../elements/breadcrumbs.ejs")() %>
+            <div class="content-head__title">
+                <div class="h1">Корзина</div>
+            </div>
+        </div>
+        <div id="basket-root" class="bx-basket bx-blue bx-step-opacity" style="opacity: 1;">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="basket-items-list-wrapper basket-items-list-wrapper-height-fixed basket-items-list-wrapper-light" id="basket-items-list-wrapper">
+                        <div class="basket-items-list-container" id="basket-items-list-container" style="min-height: 169px;">
+                            <div class="basket-items-list-overlay" id="basket-items-list-overlay" style="display: none;"></div>
+                            <div class="basket-items-list" id="basket-item-list" style="min-height: 169px;">
+                                <div class="basket-search-not-found" id="basket-item-list-empty-result" style="display: none;">
+                                    <div class="basket-search-not-found-icon"></div>
+                                    <div class="basket-search-not-found-text">
+                                        По данному запросу товаров не найдено
+                                    </div>
+                                </div>
+                                <table class="basket-items-list-table" id="basket-item-table">
+                                    <tbody>
+                                        <tr class="basket-items-list-item-container" id="basket-item-7" data-entity="basket-item" data-id="7">
+                                            <td class="basket-items-list-item-descriptions">
+                                                <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-7">
+                                                    <div class="basket-item-block-image">
+                                                        <a href="#" class="basket-item-image-link">
+                                                            <img class="basket-item-image" alt="" src="./images/content/toy.png">
+                                                        </a>
+                                                    </div>
+                                                    <div class="basket-item-block-info">
+                                                        <div class="basket-item-block-info__head">
+                                                            <div class="basket-item-block-info__top">
+                                                                <div class="basket-item-block-article">
+                                                                    <div class="basket-item-block-article__key">Арт:</div>
+                                                                    <div class="basket-item-block-article__value">123456</div>
+                                                                </div>
+                                                            </div>
+                                                            <h2 class="basket-item-info-name">
+                                                                <a href="#" class="basket-item-info-name-link">
+                                                                    <span data-entity="basket-item-name">Мишка</span>
+                                                                </a>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price basket-items-list-item-price-for-one hidden-xs">
+                                                <div class="basket-item-block-price">
+                                                    <div class="basket-item-price-current">
+                                                        <span class="basket-item-price-current-text" id="basket-item-price-7">
+                                                            990 р
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-amount">
+                                                <div class="basket-item-block-amount" data-entity="basket-item-quantity-block">
+                                                    <span class="basket-item-amount-btn-minus" data-entity="basket-item-quantity-minus"></span>
+                                                    <div class="basket-item-amount-filed-block">
+                                                        <input type="text" class="basket-item-amount-filed" value="1" data-value="1" data-entity="basket-item-quantity-field" id="basket-item-quantity-7">
+                                                    </div>
+                                                    <span class="basket-item-amount-btn-plus" data-entity="basket-item-quantity-plus"></span>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price">
+                                                <div class="basket-item-block-price">
+                                                    <div class="basket-item-price-current">
+                                                        <span class="basket-item-price-current-text" id="basket-item-sum-price-7">
+                                                            990 р
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-remove hidden-xs">
+                                                <div class="basket-item-block-actions">
+                                                    <span class="basket-item-actions-remove" data-entity="basket-item-delete">
+                                                          <svg class="i-icon">
+                                                            <use xlink:href="#icon-reset"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="basket-items-list-item-container basket-items-list-item-container-expend" id="basket-item-7" data-entity="basket-item" data-id="7">
+                                            <td class="basket-items-list-item-descriptions">
+                                                <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-7">
+                                                    <div class="basket-item-block-image">
+                                                        <a href="#" class="basket-item-image-link">
+                                                            <img class="basket-item-image" alt="" src="./images/content/toy.png">
+                                                        </a>
+                                                    </div>
+                                                    <div class="basket-item-block-info">
+                                                        <div class="basket-item-block-info__head">
+                                                            <div class="basket-item-block-info__top">
+                                                                <div class="basket-item-block-article">
+                                                                    <div class="basket-item-block-article__key">Арт:</div>
+                                                                    <div class="basket-item-block-article__value">123456</div>
+                                                                </div>
+                                                            </div>
+                                                            <h2 class="basket-item-info-name">
+                                                                <a href="#" class="basket-item-info-name-link">
+                                                                    <span data-entity="basket-item-name">Платье</span>
+                                                                </a>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price basket-items-list-item-price-for-one hidden-xs">
+                                                <div class="basket-item-block-price">
+                                                    <div class="basket-item-price-current">
+                                                      <span class="basket-item-price-current-text" id="basket-item-price-7">
+                                                         14 990 р
+                                                      </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-amount">
+                                                <div class="basket-item-block-amount" data-entity="basket-item-quantity-block">
+                                                    <div class="basket-item-block-amount__text">Товар удален из корзины</div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price">
+                                                <div class="basket-item-block-price">
+                                                    <div class="basket-item-price-current">
+                                                        <span class="basket-item-price-current-text" id="basket-item-sum-price-7"></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-restore-button-custom">
+                                                <div class="basket-items-list-item-removed-block">
+                                                    <a href="javascript:void(0)" data-entity="basket-item-restore-button">
+                                                        <svg class="i-icon">
+                                                            <use xlink:href="#icon-restore"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <span class="basket-items-list-item-clear-btn" data-entity="basket-item-close-restore-button"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="basket-items-list-item-container" id="basket-item-14" data-entity="basket-item" data-id="14">
+                                            <td class="basket-items-list-item-descriptions">
+                                                <div class="basket-items-list-item-descriptions-inner"
+                                                     id="basket-item-height-aligner-14">
+                                                    <div class="basket-item-block-image">
+                                                        <a href="#" class="basket-item-image-link">
+                                                            <img class="basket-item-image" alt="" src="./images/content/clothes.png">
+                                                        </a>
+                                                    </div>
+                                                    <div class="basket-item-block-info">
+                                                        <div class="basket-item-block-info__head">
+                                                            <div class="basket-item-block-info__top">
+                                                                <div class="basket-item-block-article">
+                                                                    <div class="basket-item-block-article__key">Арт:</div>
+                                                                    <div class="basket-item-block-article__value">123456</div>
+                                                                </div>
+                                                            </div>
+                                                            <h2 class="basket-item-info-name">
+                                                                <a href="#" class="basket-item-info-name-link">
+                                                                    <span data-entity="basket-item-name">Куколка Фия-рюкзак</span>
+                                                                </a>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price basket-items-list-item-price-for-one hidden-xs">
+                                                <div class="basket-item-block-price">
+                                                    <div class="basket-item-price-current">
+                                                    <span class="basket-item-price-current-text" id="basket-item-price-14">
+                                                        14 990 р
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-amount">
+                                                <div class="basket-item-block-amount" data-entity="basket-item-quantity-block">
+                                                    <span class="basket-item-amount-btn-minus" data-entity="basket-item-quantity-minus"></span>
+                                                    <div class="basket-item-amount-filed-block">
+                                                        <input type="text" class="basket-item-amount-filed" value="1" data-value="1" data-entity="basket-item-quantity-field" id="basket-item-quantity-14">
+                                                    </div>
+                                                    <span class="basket-item-amount-btn-plus" data-entity="basket-item-quantity-plus"></span>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price">
+                                                <div class="basket-item-block-price">
+                                                    <div class="basket-item-price-current">
+                                                    <span class="basket-item-price-current-text" id="basket-item-sum-price-14">
+                                                        14 990 р
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-remove hidden-xs">
+                                                <div class="basket-item-block-actions">
+                                                    <span class="basket-item-actions-remove" data-entity="basket-item-delete">
+                                                        <svg class="i-icon">
+                                                            <use xlink:href="#icon-reset"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="basket-items-list-item-container" id="basket-item-14" data-entity="basket-item" data-id="14">
+                                            <td class="basket-items-list-item-descriptions">
+
+                                                <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-14">
+                                                    <div class="basket-item-block-image">
+                                                        <a href="#" class="basket-item-image-link">
+                                                            <img class="basket-item-image" alt="" src="./images/content/clothes.png">
+                                                        </a>
+                                                    </div>
+                                                    <div class="basket-item-block-info">
+                                                        <div class="basket-item-block-info__head">
+                                                            <div class="basket-item-block-info__top">
+                                                                <div class="basket-item-block-article">
+                                                                    <div class="basket-item-block-article__key">Арт:</div>
+                                                                    <div class="basket-item-block-article__value">123456</div>
+                                                                </div>
+                                                            </div>
+                                                            <h2 class="basket-item-info-name">
+                                                                <a href="#" class="basket-item-info-name-link">
+                                                                    <span data-entity="basket-item-name">Куколка Фия-рюкзак</span>
+                                                                </a>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price basket-items-list-item-price-for-one hidden-xs">
+                                                <div class="basket-item-block-price">
+                                                    <div class="basket-item-price-old">
+                                                        <span class="basket-item-price-old-text">800 р</span>
+                                                    </div>
+                                                    <div class="basket-item-price-current basket-item-price-current--discount">
+                                                        <span class="basket-item-price-current-text" id="basket-item-price-14">
+                                                            699 р
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-amount">
+                                                <div class="basket-item-block-amount" data-entity="basket-item-quantity-block">
+                                                    <span class="basket-item-amount-btn-minus" data-entity="basket-item-quantity-minus"></span>
+                                                    <div class="basket-item-amount-filed-block">
+                                                        <input type="text" class="basket-item-amount-filed" value="1" data-value="1" data-entity="basket-item-quantity-field" id="basket-item-quantity-14">
+                                                    </div>
+                                                    <span class="basket-item-amount-btn-plus" data-entity="basket-item-quantity-plus"></span>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price">
+                                                <div class="basket-item-block-price">
+                                                    <div class="basket-item-price-current">
+                                                    <span class="basket-item-price-current-text" id="basket-item-sum-price-14">
+                                                        14 990 р
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-remove hidden-xs">
+                                                <div class="basket-item-block-actions">
+                                                    <span class="basket-item-actions-remove" data-entity="basket-item-delete">
+                                                        <svg class="i-icon">
+                                                            <use xlink:href="#icon-reset"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" data-entity="basket-total-block">
+                    <div class="basket-checkout-container" data-entity="basket-checkout-aligner">
+                        <div class="basket-coupon-section">
+                            <div class="basket-coupon-block-field">
+                                <div class="basket-coupon-block-field-description">У вас есть промокод?</div>
+                                <div class="form">
+                                    <div class="form-group" style="position: relative;">
+                                        <input type="text" class="form-control input" id="" placeholder="Ваш промокод" data-entity="basket-coupon-input">
+                                        <button class="basket-coupon-block-coupon-btn submit-arrow">
+                                            <svg class="i-icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-list">
+                            <div class="basket-list__item">
+                                <%- require('../elements/location.ejs')()%>
+                                <div class="orders-item__props">
+                                    <dl>
+                                        <dt>Доставка до пункта выдачи:</dt>
+                                        <dd>от 0 р</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Курьерская доставка:</dt>
+                                        <dd>от 400 р</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="basket-list__item">
+                                <div class="basket-checkout-block basket-checkout-block-total">
+                                    <div class="basket-checkout-block-total-inner">
+                                        <div class="basket-checkout-block-total-title">Стоимость товаров:</div>
+                                        <div class="basket-checkout-block-total-description">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-checkout-block basket-checkout-block-total-price">
+                                    <div class="basket-checkout-block-total-price-inner">
+                                        <div class="basket-coupon-block-total-price-current" data-entity="basket-total-price">9&nbsp;590 р</div>
+                                        <div class="basket-coupon-block-total-price-discount">
+                                            <div class="orders-item__props">
+                                                <dl>
+                                                    <dt>Ваша скидка:</dt>
+                                                    <dd>210 р</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-checkout-section">
+                            <form action="" data-form>
+                                <div class="basket-checkout-section-inner">
+                                    <div class="form-row">
+                                        <div class="form-col">
+                                            <label class="label">
+                                                <input type="text" class="input" data-inputmask data-input-required="phone">
+                                                <span class="placeholder">
+                                                    <span>Ваш телефон</span>
+                                                    <span class="required">*</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="basket-checkbox">
+                                        <div class="checkbox">
+                                            <label class="checkbox__label">
+                                                <input class="checkbox__input" type="checkbox" data-input-required="checkbox">
+                                                <div class="checkbox__emulator">
+                                                    <svg class="i-icon">
+                                                        <use xlink:href="#icon-checked"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__text checkbox__text--small">
+                                                    <span>
+                                                        Нажимая кнопку “Отправить” я соглашаюсь на обработку моих персональных данных в соответствии с
+                                                    </span>
+                                                    <a href="">Условиями</a>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="basket-checkout-block basket-checkout-block-btn">
+                                        <button class="btn btn-lg btn-default basket-btn-checkout" data-entity="basket-checkout-button">Оформить заказ</button>
+                                        <!--
+                                        <a href="#" class="btn btn--border">Оформить заказ</a>
+                                        -->
+                                    </div>
+                                    <div class="basket-admin">
+                                        <a href="#" class="link link--small">Проблемы со входом?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,45 @@
+@import "../media.css";
+
+.hero-scroll {
+    position: relative;
+}
+.hero-scroll__link {
+    display: inline-block;
+    color: white;
+    &:hover {
+        color: white;
+    }
+}
+.hero-scroll__text {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    font-weight: 600;
+    @media(--mobile-xs) {
+        font-size: 12px;
+    }
+}
+.hero-scroll__circle {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 62px;
+    margin: 32px auto 0;
+    border: 1px solid white;
+    border-radius: 100%;
+    svg {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        right: 0;
+        width: 28px;
+        height: 64px;
+        margin: auto;
+        stroke: white;
+        animation: bounce 2.5s cubic-bezier(0.645, 0.045, 0.355, 1) alternate infinite;
+    }
+}
+@keyframes bounce {
+    0% {transform: translateY(-5px);}
+    100% {transform: translateY(10px);}
+}

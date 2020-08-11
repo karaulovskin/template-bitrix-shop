@@ -1,0 +1,111 @@
+<div class="section  bg-beige-bright">
+    <div id="stocksElement1" class="stocks-element">
+        <svg class="i-icon">
+            <use xlink:href="#icon-stocksElement1"></use>
+        </svg>
+    </div>
+    <div id="stocksElement2" class="stocks-element">
+        <svg class="i-icon">
+            <use xlink:href="#icon-stocksElement2"></use>
+        </svg>
+    </div>
+    <div id="stocksElement3" class="stocks-element">
+        <svg class="i-icon">
+            <use xlink:href="#icon-stocksElement3"></use>
+        </svg>
+    </div>
+    <div id="stocksElement4" class="stocks-element">
+        <svg class="i-icon">
+            <use xlink:href="#icon-stocksElement4"></use>
+        </svg>
+    </div>
+    <div id="stocksElement5" class="stocks-element">
+        <svg class="i-icon">
+            <use xlink:href="#icon-stocksElement5"></use>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="content-head">
+            <%- require("../components/elements/breadcrumbs.ejs")() %>
+            <div class="content-head__title">
+                <div class="h1">Акции Mr. Mish </div>
+            </div>
+        </div>
+        <div class="stocks-list">
+            <% const list = [
+                {
+                    img: './images/content/stocks_item_1.jpg',
+                    title: 'Покупай выгодно'
+                },
+                {
+                    img: './images/content/stocks_item_2.jpg',
+                    title: 'Промокод на 300 р'
+                },
+                {
+                    img: './images/content/stocks_item_3.jpg',
+                    title: 'Скидка в день рождения'
+                },
+                {
+                    img: './images/content/stocks_item_2.jpg',
+                    title: 'Промокод на 300 р'
+                },
+                {
+                    img: './images/content/stocks_item_3.jpg',
+                    title: 'Скидка в день рождения'
+                },
+                {
+                    img: './images/content/stocks_item_2.jpg',
+                    title: 'Промокод на 300 р'
+                },
+                {
+                    img: './images/content/stocks_item_3.jpg',
+                    title: 'Скидка в день рождения'
+                },
+                {
+                    img: './images/content/stocks_item_2.jpg',
+                    title: 'Промокод на 300 р'
+                },
+                {
+                    img: './images/content/stocks_item_3.jpg',
+                    title: 'Скидка в день рождения'
+                },
+                {
+                    img: './images/content/stocks_item_2.jpg',
+                    title: 'Промокод на 300 р'
+                },
+                {
+                    img: './images/content/stocks_item_3.jpg',
+                    title: 'Скидка в день рождения'
+                },
+                {
+                    img: './images/content/stocks_item_4.jpg',
+                    title: '3=4'
+                }
+            ]%>
+            <% list.forEach(function (item) { %>
+                <div class="stocks-list__item">
+                    <div class="stocks-item">
+                        <a href="#" class="stocks-item__link">
+                            <picture class="stocks-item-picture">
+                                <img class="stocks-item-picture__img" src="<%= item.img %>" alt="">
+                            </picture>
+                            <div class="stocks-item__content">
+                                <div class="stocks-item__title"><%= item.title %></div>
+                                <div class="stocks-item-period">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-period"></use>
+                                    </svg>
+                                    <div class="stocks-item-period__date">09/01 — 31/01</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+        <div class="catalog__show">
+            <button class="button-circle-plus" type="button"></button>
+        </div>
+        <%- require("../components/elements/pagination.ejs")() %>
+    </div>
+</div>

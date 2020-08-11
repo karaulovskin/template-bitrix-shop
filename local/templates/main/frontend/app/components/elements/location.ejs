@@ -1,0 +1,65 @@
+<div class="basket-location" data-location>
+    <div class="sorting-select" data-location-select-open>
+        <div class="sorting-select__label">Доставка в город</div>
+        <div class="sorting-select__value">
+            <span data-sorting-value>Москва</span>
+            <svg class="i-icon">
+                <use xlink:href="#icon-select"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="modal-location" data-modal-location="select">
+        <button class="modal-location__close" aria-label="Закрыть окно" data-modal-location-close></button>
+        <div class="modal-location__head">
+            <div class="modal-location-title">
+                <div class="modal-location-title__label">Введите<br> название города:</div>
+            </div>
+            <div class="modal-location__form">
+                <form action="" class="modal-location-form">
+                    <input class="input" type="text" data-location-search>
+                    <button class="submit">
+                        <svg class="i-icon">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="modal-location__body" data-location-list>
+            <ul class="modal-location-list">
+                <% const list = [
+                    {
+                        title: 'Краснодар'
+                    },
+                    {
+                        title: 'Москва'
+                    },
+                    {
+                        title: 'Санкт-Петербург'
+                    },
+                    {
+                        title: 'Ростов-На-Дону'
+                    },
+                    {
+                        title: 'Сочи'
+                    },
+                    {
+                        title: 'Александровск-Сахалинский'
+                    }
+                ]%>
+                <% list.forEach(function (item) { %>
+                    <li class="modal-location-list__item">
+                        <a href="#" class="modal-location-list__link">
+                            <i class="modal-location-list__icon">
+                                <svg class="i-icon i-icon--location">
+                                    <use xlink:href="#icon-point"></use>
+                                </svg>
+                            </i>
+                            <span><%= item.title%></span>
+                        </a>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+</div>

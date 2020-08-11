@@ -1,0 +1,11 @@
+<% const data = {
+    'title': 'Акция',
+    'flowContainerClass' : ''
+} %>
+
+<%- require("../layouts/header.ejs")(data) %>
+<%- require("../section/stocks-inner.ejs")() %>
+<%- require("../section/stocks-video.ejs")() %>
+<%- require("../section/stocks-slider.ejs")() %>
+<%- require("../section/stocks-back.ejs")() %>
+<%- require("../layouts/footer.ejs")() %>

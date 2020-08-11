@@ -1,0 +1,18 @@
+@custom-media --mobile-xs (max-width: 480px);
+@custom-media --mobile-s (max-width: 650px);
+@custom-media --mobile (max-width: 800px);
+@custom-media --mobile-above (min-width: 751px);
+@custom-media --tablet-below (max-width: 900px);
+@custom-media --tablet (max-width: 1000px);
+@custom-media --tablet-above (max-width: 1280px);
+@custom-media --desktop (min-width: 1367px) and (max-width: 1920px);
+@custom-media --desktop-below (max-width: 1365px);
+@custom-media --desktop-above (max-width: 1439px);
+@custom-media --container-below (max-width: 1440px);
+@custom-media --full (width: 1920px);
+@custom-media --full-below (max-width: 1919px);
+
+
+@custom-media --height-700 (min-height: 700px);
+@custom-media --height-900 (min-height: 900px);
+@custom-media --height-1000 (min-height: 1000px);

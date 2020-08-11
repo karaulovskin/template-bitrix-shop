@@ -1,0 +1,122 @@
+@import "../media.css";
+
+.section {
+    position: relative;
+    padding-bottom: 40px;
+}
+.section-stocks {
+    position: relative;
+    padding: 143px 0 50px;
+    @media(--mobile-xs) {
+        padding: 40px 0 50px;
+    }
+}
+.section-assemble {
+    position: relative;
+    padding: 110px 0 100px;
+    background-color: white;
+    @media(--mobile-xs) {
+        padding: 80px 0 40px;
+    }
+}
+.section-birthday {
+    background-color: white;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(--mobile-xs) {
+        background-image: url("../images/bg/bg-birthday-mobile.png")!important;
+        padding-bottom: 64vw;
+        background-position: 50% 100%;
+        background-size: contain;
+    }
+}
+.section-catalog {
+    padding: 100px 0 40px;
+    background: linear-gradient(90deg, #FFE9CA 1.8%, #FFD5CA 98.73%);
+    @media(--mobile-xs) {
+        padding: 40px 0 40px;
+    }
+}
+.section-directory {
+    padding: 0 0 35px;
+}
+.section-card {
+    /*padding-bottom: 52px;*/
+}
+.section-card-about {
+    padding:  68px 0 94px;
+    @media(max-width: 1000px) {
+        .tabs-nav {
+            display: none;
+        }
+    }
+    @media(--mobile-xs) {
+        padding: 40px 0 56px;
+    }
+}
+.section-back {
+    padding: 68px 0 44px;
+}
+.section-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .6);
+    }
+}
+.section-contacts-modal {
+    padding: 90px 0;
+}
+.section-map {
+    height: 500px;
+    @media(--mobile) {
+        height: 400px;
+    }
+    @media(--mobile-xs) {
+        height: 300px;
+    }
+}
+.section-shops {
+    margin-top: 58px;
+    margin-bottom: 84px;
+}
+.section-personal {
+    padding: 62px 0 86px;
+    @media(--mobile-xs) {
+        padding: 20px 0 50px;
+    }
+}
+.section-personal-basket {
+    padding: 90px 0;
+    @media(--mobile-xs) {
+        padding: 40px 0;
+    }
+}
+.section-order {
+    padding: 40px 0 80px;
+    @media(--mobile-xs) {
+        padding: 40px 0 50px;
+    }
+}
+.section-total {
+    padding: 50px 0;
+    @media(--mobile-xs) {
+        padding: 30px 0 50px;
+    }
+}
+.section-basket {
+    padding-bottom: 43px;
+}

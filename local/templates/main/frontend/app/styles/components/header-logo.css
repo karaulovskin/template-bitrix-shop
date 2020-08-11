@@ -1,0 +1,15 @@
+@import "../media.css";
+
+.header-logo {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    @media(--tablet-above) {
+        width: 65px;
+        height: 65px;
+    }
+    @media(--mobile-s) {
+        width: 35px;
+        height: 35px;
+    }
+}

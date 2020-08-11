@@ -1,0 +1,91 @@
+@import "../media.css";
+
+.seo {
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+    background-color: white;
+    h1,
+    h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+        padding-bottom: 26px;
+        font-size: 40px;
+        @media(--mobile-xs) {
+            font-size: 30px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            width: 200px;
+            height: 1px;
+            margin: 0 auto;
+            background-color: var(--c-black);
+            @media(--mobile-xs) {
+                width: 86px;
+            }
+        }
+    }
+}
+.seo__block {
+    position: relative;
+    min-height: 532px;
+    @media(--mobile-s) {
+        min-height: 85.847vw;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 584px;
+        height: 532px;
+        background-image: url("../images/svg/seo_heart.svg");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        @media(--mobile-s) {
+            width: 100%;
+            height: 85.847vw;
+        }
+    }
+}
+.seo__heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 584px;
+    height: 532px;
+}
+.seo__content {
+    position: relative;
+    padding-top: 112px;
+    @media(--mobile-xs) {
+        padding-top: 84px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 16px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 62px;
+        height: 76px;
+        background-image: url("../images/svg/title-mish.svg");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        @media(--mobile-xs) {
+            top: -13px;
+        }
+    }
+}

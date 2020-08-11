@@ -1,0 +1,211 @@
+<div id="call" class="modal modal--big">
+    <div class="modal__head">
+        <div class="modal__title">Заказать звонок</div>
+        <div class="modal__desc">Оставьте заявку и наш специалист свяжется с вами</div>
+    </div>
+    <div class="modal__body">
+        <form class="modal__form" action="" data-form>
+            <div class="form-row">
+                <div class="form-col form-col--6">
+                    <label class="label">
+                        <input type="text" class="input input--required" value="" placeholder="" data-input-required="name">
+                        <span class="placeholder">
+                            <span>Имя</span>
+                            <span class="required">*</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="form-col form-col--6">
+                    <label class="label">
+                        <input type="text" class="input" data-inputmask data-input-required="phone">
+                        <span class="placeholder">
+                            <span>Телефон</span>
+                            <span class="required">*</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <div class="modal__checkbox">
+                    <div class="checkbox">
+                        <label class="checkbox__label">
+                            <input class="checkbox__input" type="checkbox" data-input-required="checkbox">
+                            <div class="checkbox__emulator">
+                                <svg class="i-icon">
+                                    <use xlink:href="#icon-checked"></use>
+                                </svg>
+                            </div>
+                            <div class="checkbox__text">
+                                <span>
+                                    Нажимая кнопку “Отправить” я соглашаюсь на обработку моих персональных данных в соответствии с
+                                </span>
+                                <a href="">Условиями</a>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__buttons">
+                    <input type="submit" class="btn btn--orange" value="Отправить">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="callSuccess" class="modal modal--big">
+    <div class="modal__head">
+        <div class="modal__title">Заявка отправлена</div>
+        <div class="modal__desc">Спасибо! Мы свяжемся с вами в ближайшее время</div>
+    </div>
+</div>
+
+<div id="coming" class="modal modal--big">
+    <div class="modal__head">
+        <div class="modal__title">Сообщить о поступлении</div>
+    </div>
+    <div class="modal__body">
+        <form class="modal__form" action="" data-form data-ajax-url="/local/inc/ajax/call.php">
+            <div class="form-row">
+                <div class="form-col form-col--6">
+                    <label class="label">
+                        <input type="text" class="input input--required" placeholder="Имя">
+                    </label>
+                </div>
+                <div class="form-col form-col--6">
+                    <label class="label">
+                        <input type="text" class="input input--required" placeholder="Телефон">
+                    </label>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <div class="modal__checkbox">
+                    <div class="checkbox">
+                        <label class="checkbox__label">
+                            <input class="checkbox__input" type="checkbox">
+                            <div class="checkbox__emulator">
+                                <svg class="i-icon">
+                                    <use xlink:href="#icon-checked"></use>
+                                </svg>
+                            </div>
+                            <div class="checkbox__text">
+                                <span>
+                                    Нажимая кнопку “Отправить” я соглашаюсь на обработку моих персональных данных в соответствии с
+                                </span>
+                                <a href="">Условиями</a>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__buttons">
+                    <input type="submit" class="btn btn--orange" value="Отправить">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="login" class="modal modal--small">
+    <div class="modal__head">
+        <div class="modal__title">Войти в кабинет</div>
+        <div class="modal__desc">По номеру телефона</div>
+    </div>
+    <div class="modal__body">
+        <form class="modal__form modal__form--small" action="" data-ajax-url="/local/inc/ajax/auth.php" data-form data-form-open-form-sms>
+            <div class="form-row">
+                <div class="form-col">
+                    <label class="label">
+                        <input type="text" class="input input--required" placeholder="Телефон" data-inputmask data-input-required="phone">
+                    </label>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <div class="modal__checkbox">
+                    <div class="checkbox">
+                        <label class="checkbox__label">
+                            <input class="checkbox__input" type="checkbox" data-input-required="checkbox">
+                            <div class="checkbox__emulator">
+                                <svg class="i-icon">
+                                    <use xlink:href="#icon-checked"></use>
+                                </svg>
+                            </div>
+                            <div class="checkbox__text">
+                                <span>
+                                    Нажимая кнопку “Отправить” я соглашаюсь на обработку моих персональных данных в соответствии с
+                                </span>
+                                <a href="">Условиями</a>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__buttons">
+                    <input type="submit" class="btn btn--orange" value="получить sms-код">
+                    <div class="modal__note">
+                        <a href="/support/">Проблемы со входом?</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="loginSMS" class="modal modal--small">
+    <div class="modal__head">
+        <div class="modal__title">Введите код из sms</div>
+        <div class="modal__desc modal__desc--black">мы отправили код на  <span data-number-phone-sms>+7 (962) 368-47-12</span> <a href="">изменить</a></div>
+    </div>
+    <div class="modal__body">
+        <form class="modal__form modal__form--small" action="" data-form>
+            <input type="text" hidden data-number-phone-sms-value>
+            <input type="text" hidden data-number-phone-sms-number>
+            <div class="form-row">
+                <div class="form-col">
+                    <label class="label">
+                        <input type="text" class="input" placeholder="Ваш код">
+                    </label>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <div class="modal__checkbox">
+                    <div class="request-code">
+                        <div class="request-code__label">Запросить код повторно можно через</div>
+                        <div class="request-code__time">60 секунд</div>
+                    </div>
+                </div>
+                <div class="modal__buttons">
+                    <input type="submit" class="btn btn--orange" value="Отправить">
+                    <div class="modal__note">Проблемы со входом?</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="loginSMS2" class="modal modal--small">
+    <div class="modal__head">
+        <div class="modal__title">Введите код из sms</div>
+        <div class="modal__desc modal__desc--black">мы отправили код на  <span data-number-phone-sms>+7 (962) 368-47-12</span> <a href="">изменить</a></div>
+    </div>
+    <div class="modal__body">
+        <form class="modal__form modal__form--small" action="" data-form>
+            <input type="text" hidden data-number-phone-sms-value>
+            <div class="form-row">
+                <div class="form-col">
+                    <label class="label">
+                        <input type="text" class="input" placeholder="Ваш код">
+                    </label>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <div class="modal__checkbox">
+                    <div class="request-code">
+                        <a class="request-code__link" href="#">запросить код</a>
+                    </div>
+                </div>
+                <div class="modal__buttons">
+                    <input type="submit" class="btn btn--orange" value="Отправить">
+                    <div class="modal__note">Проблемы со входом?</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+@import "../media.css";
+
+.copyright {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1.8;
+    color: var(--c-black);
+    @media(--mobile-xs) {
+        max-width: 210px;
+        margin: 0 auto 12px;
+        font-size: 9px;
+    }
+}

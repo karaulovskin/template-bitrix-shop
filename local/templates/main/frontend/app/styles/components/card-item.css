@@ -1,0 +1,194 @@
+@import "../media.css";
+
+.card-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 850px;
+    &--sound {
+        .card-item__link {
+            &:before {
+                content: '';
+                position: absolute;
+                top: -22px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 220px;
+                height: 220px;
+                border: 1px solid var(--c-black);
+                border-radius: 100%;
+                transform: scale(.7);
+                transition: .3s;
+                opacity: 0;
+                z-index: 2;
+            }
+            &:after {
+                background-image: url("../images/svg/sound-orange.svg");
+            }
+            &:hover {
+                &:before {
+                     transform: scale(1);
+                     opacity: 1;
+                }
+            }
+        }
+        .card-item-picture__img {
+            position: relative;
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            font-family: 'object-fit: contain;';
+        }
+    }
+}
+.card-item__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+.card-item__link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 72px;
+    background-color: white;
+    @media(--mobile-xs) {
+        padding-top: 42px;
+        padding-bottom: 84px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 80px;
+        height: 80px;
+        background-image: url("../images/svg/magnifier.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+         transform: scale(.7) translate(2px, -7px);
+        opacity: 0;
+        transition: .3s;
+    }
+    &:hover {
+        .card-item-picture__bg {
+            transform: scale(1);
+            opacity: 1;
+        }
+        &:after {
+            transform: scale(1) translate(2px, -7px);
+            opacity: 1;
+        }
+    }
+}
+.card-item-picture {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 470px;
+    height: 428px;
+    overflow: hidden;
+    @media(--mobile-s) {
+        width: auto;
+        height: 65vw;
+    }
+    @media(--mobile-xs) {
+        width: auto;
+        height: 70vw;
+    }
+}
+.card-item-picture__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(.7);
+    transition: .3s;
+    opacity: 0;
+}
+.card-item-picture__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    font-family: 'object-fit: contain;';
+}
+.card-item__bottom {
+    display: flex;
+    justify-content: space-between;
+    min-height: 94px;
+    padding-top: 15px;
+    @media(--mobile-xs) {
+        flex-wrap: wrap;
+    }
+}
+.card-item__buy {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    @media(--mobile-xs) {
+        order: 1;
+        .price {
+            margin-top: 10px;
+        }
+    }
+    .btn-basket-circle {
+        margin-top: -45px;
+        z-index: 1;
+    }
+}
+.card-item__article,
+.card-item__status {
+    width: 30%;
+    min-width: 30%;
+    text-transform: uppercase;
+    @media(--mobile-xs) {
+        width: 50%;
+        min-width: 50%;
+        font-size: 10px;
+    }
+}
+.card-item__status {
+    text-align: right;
+}
+.card-item__note {
+    margin-top: 12px;
+    text-align: center;
+    .search-tooltip-item__coming.search-tooltip-item__coming--big {
+        text-align: center;
+    }
+    @media(--mobile-xs){
+        margin-top: 8px;
+    }
+}
+.card-item-note {
+    font-weight: 500;
+    font-size: 11px;
+    @media(--mobile-xs){
+        font-size: 10px;
+    }
+}
+.card-item__audio {
+    opacity: 0;
+    visibility: hidden;
+}

@@ -1,0 +1,44 @@
+@import "../media.css";
+
+.toggle-filter {
+    position: relative;
+    display: none;
+    margin-right: 60px;
+    &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 1px;
+        height: 30px;
+        margin: auto;
+        background-color: var(--c-black);
+    }
+    @media(max-width: 1200px) {
+        display: block;
+    }
+    @media(--mobile) {
+        margin-right: 0;
+        &:after {
+            content: '';
+        }
+    }
+}
+.toggle-filter__btn {
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    transition: var(--transition);
+    cursor: pointer;
+    &:focus,
+    &:hover {
+        color: var(--c-orange);
+    }
+    &:focus {
+        outline: none;
+    }
+}

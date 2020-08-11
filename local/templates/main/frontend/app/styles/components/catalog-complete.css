@@ -1,0 +1,40 @@
+@import '../media.css';
+
+.catalog-complete {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 300px;
+    padding: 20px 0;
+    @media(--mobile-s) {
+        padding: 100px 0;
+    }
+}
+.catalog-complete__icon {
+    margin-right: 30px;
+    @media(--mobile-xs) {
+        margin-right: 14px;
+    }
+}
+.catalog-complete__price {
+    margin-right: 15px;
+    @media(--mobile-xs) {
+        margin-right: 0;
+    }
+}
+.catalog-complete__icon,
+.catalog-complete__price,
+.catalog-complete__basket {
+    padding: 10px 0;
+    @media(--mobile-s) {
+        position: relative;
+        padding: 0
+    }
+}
+.catalog-complete__basket {
+    padding: 10px 0;
+    @media(--mobile-s) {
+        width: 100%;
+    }
+}

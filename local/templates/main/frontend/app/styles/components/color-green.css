@@ -1,0 +1,11 @@
+@import "../media.css";
+
+.color-green {
+    color: var(--c-green);
+}
+.color-red {
+    color: var(--c-red);
+}
+.color-orange {
+    color: var(--c-orange);
+}

@@ -1,0 +1,14 @@
+@import "../media.css";
+
+[data-animate],
+[data-animate-toy-item],
+[data-animate-toy-controls-item] {
+    /*opacity: 0;*/
+    /*visibility: hidden;*/
+}
+.animated-show {
+    /*opacity: 1;*/
+    /*visibility: visible;*/
+    /*transition: 1s;*/
+    /*transform: scale(1);*/
+}

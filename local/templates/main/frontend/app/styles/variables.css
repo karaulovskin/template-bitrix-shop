@@ -1,0 +1,30 @@
+@import "media.css";
+
+:root {
+    --c-black: #3C2C16;
+    --c-orange: #F19000;
+    --c-gray: #CACACA;
+    --c-gray2: #BBBBBB;
+    --c-red: #FD8479;
+    --c-green: #67B398;
+    --c-beige-bright: #FCEFDD;
+    --c-beige: #FFFAF3;
+    --c-brown: #BFB2A0;
+
+    --bg: #F3F1F2;
+    --bg-black: #1B1B1B;
+    --border: #F0F0F0;
+
+    --controlBg: #e3e3e3;
+    --controlColor: #7a7a7a;
+    --controlTrack: #c4c4c4;
+
+    --inputBg: #EDEDED;
+    --inputBorder: #CFCFCF;
+
+    --placeholder: #B6ACA0;
+
+    --boxShadow: 0px 30px 55px rgba(0, 0, 0, 0.1);
+    --borderRadius: 6px;
+    --transition: .2s;
+}

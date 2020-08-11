@@ -1,0 +1,15 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [54.735613, 20.538649]}, "properties": {"type": "0", "balloonContentHeader": "", "balloonContentBody": "<p></p>", "balloonContentFooter": "", "clusterCaption": "", "hintContent": "" }},
+    {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [54.725613, 21.538649]}, "properties": {"type": "1", "balloonContentHeader": "", "balloonContentBody": "<p></p>", "balloonContentFooter": "", "clusterCaption": "", "hintContent": "" }},
+    {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [55.715613, 20.538649]}, "properties": {"type": "2", "balloonContentHeader": "", "balloonContentBody": "<p></p>", "balloonContentFooter": "", "clusterCaption": "", "hintContent": "" }},
+    {"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [45.039569, 38.974350]}, "properties": {"type": "3", "balloonContentHeader": "", "balloonContentBody": "<p></p>", "balloonContentFooter": "", "clusterCaption": "", "hintContent": "" }},
+    {"type": "Feature", "id": 4, "geometry": {"type": "Point", "coordinates": [45.059569, 39.974350]}, "properties": {"type": "4", "balloonContentHeader": "", "balloonContentBody": "<p></p>", "balloonContentFooter": "", "clusterCaption": "", "hintContent": "" }},
+    {"type": "Feature", "id": 5, "geometry": {"type": "Point", "coordinates": [46.049569, 39.974350]}, "properties": {"type": "5", "balloonContentHeader": "", "balloonContentBody": "<p></p>", "balloonContentFooter": "", "clusterCaption": "", "hintContent": "" }},
+    {"type": "Feature", "id": 6, "geometry": {"type": "Point", "coordinates": [55.751470, 37.618827]}, "properties": {"type": "6", "balloonContentHeader": "", "balloonContentBody": "<p></p>", "balloonContentFooter": "", "clusterCaption": "", "hintContent": "" }},
+    {"type": "Feature", "id": 7, "geometry": {"type": "Point", "coordinates": [55.831903, 37.411961]}, "properties": {"type": "7", "balloonContentHeader": "", "balloonContentBody": "<div class='shops-item__content'><div class='shops-item-phone></div></div>", "balloonContentFooter": "", "clusterCaption": "", "hintContent": ""}},
+    {"type": "Feature", "id": 8, "geometry": {"type": "Point", "coordinates": [55.823903, 37.411961]}, "properties": {"type": "8", "balloonContentHeader": "", "balloonContentBody": "", "balloonContentFooter": "", "clusterCaption": "", "hintContent": ""}},
+    {"type": "Feature", "id": 9, "geometry": {"type": "Point", "coordinates": [55.856903, 37.411961]}, "properties": {"type": "9" ,"balloonContentHeader": "", "balloonContentBody": "<p></p>", "balloonContentFooter": "", "clusterCaption": "", "hintContent": ""}}
+  ]
+}

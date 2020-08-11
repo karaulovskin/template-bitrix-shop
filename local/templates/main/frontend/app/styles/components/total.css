@@ -1,0 +1,53 @@
+@import "../media.css";
+
+.total {
+    @media(--mobile) {
+        max-width: 410px;
+        margin: 0 auto;
+    }
+}
+.total-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.total-list__item {
+    width: 33.33%;
+    min-width: 33.33%;
+    text-align: center;
+    @media(--mobile) {
+        width: 100%;
+        min-width: 100%;
+    }
+    &:not(:last-child) {
+        border-right: 1px solid var(--c-black);
+        @media(--mobile) {
+            border-right: none;
+            border-bottom: 1px solid var(--c-black);
+        }
+    }
+}
+
+.total-item {
+    padding: 23px 0 14px;
+}
+.total-item__label {
+    margin-bottom: 7px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+}
+.total-item__price {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.total-form {
+    width: 100%;
+    max-width: 410px;
+    margin: 0 auto;
+    padding: 22px 0 0;
+}
+.total-form__checkbox {
+    margin-bottom: 32px;
+}

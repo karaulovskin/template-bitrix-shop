@@ -1,0 +1,32 @@
+@import "../media.css";
+
+.footer-contacts__top {
+    padding: 65px 0 45px;
+    @media(--mobile-xs) {
+        padding: 45px 0 45px;
+    }
+}
+.footer-contacts__bottom {
+    position: relative;
+    padding: 28px 0;
+    @media(--mobile-xs) {
+        padding: 14px 0;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 850px;
+        height: 1px;
+        margin: auto;
+        background-color: var(--c-black);
+    }
+}
+.footer-contacts__phone {
+    margin-bottom: 10px;
+}
+.footer-contacts__mail {
+    margin-bottom: 10px;
+}

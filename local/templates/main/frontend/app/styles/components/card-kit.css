@@ -1,0 +1,18 @@
+@import "../media.css";
+
+.card-kit {
+    padding-bottom: 48px;
+    @media(--mobile-xs) {
+        padding-bottom: 20px;
+        .h2 {
+            font-size: 30px;
+        }
+    }
+}
+.card-kit__body {
+    display: flex;
+    padding-top: 50px;
+    @media(--mobile-xs) {
+        padding-top: 8px;
+    }
+}

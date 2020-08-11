@@ -1,0 +1,29 @@
+@import '../media.css';
+
+.specifications {
+    margin-top: 9px;
+    padding: 28px 0;
+    border-top: 1px solid var(--c-black);
+    border-bottom: 1px solid var(--c-black);
+}
+.specifications-item {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    @media(--tablet) {
+        font-size: 13px;
+    }
+    &:not(:last-child) {
+        margin-bottom: 19px;
+        @media(--tablet) {
+            margin-bottom: 16px;
+        }
+    }
+}
+.specifications-item__key {
+    margin-right: 4px;
+    color: var(--placeholder);
+}
+.specifications-item__val {
+
+}

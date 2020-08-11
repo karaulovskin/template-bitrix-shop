@@ -1,0 +1,39 @@
+@import "../media.css";
+
+.button-circle-plus {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--c-black);
+    border-radius: 100%;
+    transition: var(--transition);
+    cursor: pointer;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 16px;
+        height: 1px;
+        background-color: var(--c-black);
+        transition: var(--transition);
+    }
+    &:after {
+        transform: rotate(90deg);
+    }
+    &:hover {
+        background-color: var(--c-orange);
+        border-color: var(--c-orange);
+        &:before,
+        &:after {
+            background-color: white;
+        }
+    }
+}

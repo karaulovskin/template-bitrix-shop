@@ -1,0 +1,77 @@
+@import "../media.css";
+
+.order-shops {
+    padding-top: 24px;
+    padding-bottom: 76px;
+    @media(--mobile-xs) {
+        padding-bottom: 50px;
+    }
+}
+.order-shops-list__item {
+    border-bottom: 1px solid var(--border);
+    &:first-child {
+        border-top: 1px solid var(--border);
+    }
+}
+.order-shops__head {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.order-shops-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    @media(--tablet-below) {
+        flex-wrap: wrap;
+    }
+}
+.order-shops-item__col {
+    &:nth-child(1) {
+        width: 50px;
+        min-width: 50px;
+    }
+    &:nth-child(2) {
+        flex-grow: 1;
+        padding-right: 40px;
+        @media(--tablet-below) {
+            width: calc(100% - 50px);
+            min-width: calc(100% - 50px);
+            margin-bottom: 20px;
+        }
+    }
+    &:nth-child(3) {
+        transform: translateY(5px);
+        width: 412px;
+        min-width: 412px;
+        padding-right: 20px;
+        @media(--tablet-above) {
+            width: 250px;
+            min-width: 250px;
+        }
+        @media(--tablet-below) {
+            margin-left: 50px;
+        }
+        @media(--mobile-s) {
+            width: 100%;
+            min-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    &:nth-child(4) {
+        width: 220px;
+        min-width: 220px;
+        @media(--mobile-s) {
+            margin-left: 50px;
+        }
+    }
+}
+.order-shops-item__name {
+    font-family: 'Playfair Display';
+    line-height: 1.8;
+    font-size: 20px;
+}
+.order-shops-item__point {
+    font-weight: 500;
+    font-size: 14px;
+}

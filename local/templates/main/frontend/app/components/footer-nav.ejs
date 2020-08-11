@@ -1,0 +1,47 @@
+<nav class="footer-nav">
+    <ul class="footer-nav-list" data-move="nav">
+        <% const list = [
+            {
+                title: 'О нас'
+            },
+            {
+                title: 'Магазины'
+            },
+            {
+                title: 'Контакты'
+            },
+            {
+                title: 'Новости'
+            },
+            {
+                title: 'Вакансии'
+            },
+            {
+                title: 'Аренда'
+            },
+            {
+                title: 'Партнерам'
+            },
+            {
+                title: 'Акции'
+            },
+            {
+                title: 'Бонусная программа'
+            },
+            {
+                title: 'День рождения с нами'
+            },
+            {
+                title: 'Доставка и оплата'
+            },
+            {
+                title: 'Гарантия и возврат'
+            }
+        ]%>
+        <% list.forEach(function (item) { %>
+            <li class="footer-nav-list__item">
+                <a href="#" class="footer-nav-list__link"><%= item.title%></a>
+            </li>
+        <% }) %>
+    </ul>
+</nav>

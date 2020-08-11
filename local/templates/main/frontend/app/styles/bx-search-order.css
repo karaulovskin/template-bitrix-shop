@@ -1,0 +1,56 @@
+@import "media.css";
+
+.bx-ui-sls-input-block {
+
+}
+.bx-ui-sls-route {
+    display: none;
+}
+.bx-ui-sls-fake {
+    width: 100%;
+    height: 38px;
+    padding: 0 0 10px;
+    font-size: 12px;
+    line-height: 38px;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--c-black);
+    &:focus {
+        outline: none;
+        border-color: var(--boxShadow);
+    }
+}
+.bx-ui-sls-pane {
+    position: relative;
+    background-color: white;
+    box-shadow: var(--boxShadow);
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 17px;
+        height: 30px;
+    }
+    &:before {
+        top: 0;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.3) 100%);
+    }
+    &:after {
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,1) 100%);
+    }
+}
+.bx-ui-sls-variants {
+    max-height: 200px;
+    padding: 26px 0px 26px 30px;
+    overflow-y: auto;
+    .dropdown-item {
+        padding: 8px 0;
+    }
+    .dropdown-item-text {
+        font-weight: normal;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,97 @@
+@import "../media.css";
+
+.hero-element {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#heroElement1 {
+    top: 50%;
+    transform: translate(-382px, 115px)scale(1);
+    width: 57px;
+    height: 58px;
+    @media(--container-below) {
+        transform: translate(-330px, 115px)scale(1);
+    }
+    @media(--mobile) {
+        width: 45px;
+        height: 45px;
+        transform: translate(-230px, 75px)scale(1);
+    }
+    @media(--mobile-s) {
+        transform: translate(-180px, 50px)scale(1);
+    }
+    @media(--mobile-xs) {
+        width: 31px;
+        height: 32px;
+        transform: translate(-128px, 50px)scale(1);
+    }
+    @media(orientation: landscape) and (max-height: 400px) {
+        transform: translate(-128px, 50px)scale(0.5);
+    }
+    &.animated-show {
+        transform: translate(-382px, 115px)scale(1);
+    }
+}
+#heroElement2 {
+    top: 50%;
+    transform: translate(-250px, -142px)scale(1);
+    width: 83px;
+    height: 83px;
+    @media(--container-below) {
+        transform: translate(-230px, -142px)scale(1);
+    }
+    @media(--mobile) {
+        width: 65px;
+        height: 65px;
+        transform: translate(-220px, -150px)scale(1);
+    }
+    @media(--mobile-s) {
+        transform: translate(-170px, -112px)scale(1);
+    }
+    @media(--mobile-xs) {
+        width: 48px;
+        height: 48px;
+        transform: translate(-118px, -112px)scale(1);
+    }
+    @media(orientation: landscape) and (max-height: 400px) {
+        transform: translate(-118px, -112px)scale(0.5);
+    }
+    &.animated-show {
+        transform: translate(-250px, -142px)scale(1);
+    }
+}
+#heroElement3 {
+    top: 50%;
+    transform: translate(298px, -180px)scale(1);
+    width: 150px;
+    height: 157px;
+    @media(--container-below) {
+        transform: translate(260px, -180px)scale(1);
+    }
+    @media(--mobile) {
+        width: 100px;
+        height: 105px;
+        transform: translate(220px, -190px)scale(1);
+    }
+    @media(--mobile-s) {
+        transform: translate(150px, -145px)scale(1);
+    }
+    @media(--mobile-xs) {
+        width: 65px;
+        height: 68px;
+        transform: translate(106px, -145px)scale(1);
+    }
+    @media(orientation: landscape) and (max-height: 400px) {
+        transform: translate(134px, -145px)scale(0.5);
+    }
+    &.animated-show {
+        transform: translate(298px, -180px)scale(1);
+    }
+}

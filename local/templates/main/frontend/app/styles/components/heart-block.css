@@ -1,0 +1,119 @@
+@import "../media.css";
+
+.heart-block {
+    position: relative;
+    margin: auto;
+    &--assemble {
+        width: 100%;
+        max-width: 860px;
+        .heart-block__heart {
+            width: 692px;
+            @media(--mobile) {
+                width: 600px;
+            }
+            @media(--mobile-s) {
+                width: 100%;
+                min-height: auto;
+            }
+        }
+        .heart-block__content {
+            margin-bottom: 30px;
+            padding-top: 125px;
+            @media(--mobile-xs) {
+                padding-top: 50px;
+            }
+        }
+        .icon-heart {
+            width: 100%;
+            height: auto;
+            color: transparent;
+        }
+        .icon-mish {
+            position: absolute;
+            @media(--mobile-xs) {
+                top: -30px;
+            }
+        }
+        .heart-block__desc {
+            min-height: 104px;
+        }
+    }
+    &--birthday {
+        width: 100%;
+        max-width: 722px;
+        .heart-block__heart {
+            width: 100%;
+            .icon-heart {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            @media(--mobile) {
+                width: 100%;
+                min-height: auto;
+            }
+        }
+        .icon-heart {
+            position: relative;
+            transform: translateY(105px);
+            z-index: 1;
+            @media(--mobile-xs) {
+                transform: translateY(14vw);
+            }
+        }
+        .icon-mish {
+            position: absolute;
+            top: 207px;
+            z-index: 1;
+            @media(--mobile-xs) {
+                top: 9vw;
+            }
+        }
+        .heart-block__content {
+            padding-top: 291px;
+            @media(--mobile-xs) {
+                padding-top: 35vw;
+                .heart-block__title {
+                    max-width: 200px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .heart-block__desc {
+            max-width: 450px;
+            min-height: 130px;
+            margin: 0 auto 50px;
+            @media(--mobile) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.heart-block__heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.heart-block__content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+.heart-block__title {
+    margin-bottom: 20px;
+}
+.heart-block__desc {
+    margin: 0 auto 28px;
+    font-weight: 500;
+}
+.icon-mish {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 62px;
+    height: 76px;
+}

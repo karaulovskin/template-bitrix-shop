@@ -1,0 +1,240 @@
+<section class="bg-beige-bright">
+    <div class="container">
+        <div class="content-head">
+            <%- require("../components/elements/breadcrumbs.ejs")() %>
+            <div class="content-head__title">
+                <div class="h1">Мои заказы</div>
+            </div>
+            <div class="content-head__subtitle">
+                <nav class="tabs-nav">
+                    <ul class="tabs-nav-list tabs-nav-list--big-border">
+                        <li class="tabs-nav-list__item">
+                            <a href="#" class="tabs-nav-list__link">Мои данные</a>
+                        </li>
+                        <li class="tabs-nav-list__item current">
+                            <a href="#" class="tabs-nav-list__link">Мои заказы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="logout">
+                    <a href="#" class="logout__link">
+                        <span>Выйти</span>
+                        <svg class="i-icon">
+                            <use xlink:href="#icon-logout"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-personal bg-white">
+    <div class="container">
+        <div class="orders">
+            <div class="orders__head">
+                <div class="orders__row">
+                    <div class="orders__col">№ Заказа</div>
+                    <div class="orders__col">Дата</div>
+                    <div class="orders__col">Товаров</div>
+                    <div class="orders__col">Способ оплаты</div>
+                    <div class="orders__col">Способ доставки</div>
+                    <div class="orders__col">Статус</div>
+                    <div class="orders__col">Сумма</div>
+                </div>
+            </div>
+            <div class="orders__content">
+                <div class="orders__row">
+                    <div class="orders__col">
+                        <span class="orders__label">№ Заказа</span>
+                        <svg class="i-icon">
+                            <use xlink:href="#icon-orders"></use>
+                        </svg>
+                        <span>№ 123456</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Дата заказа</span>
+                        <span>12.12.2019</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Товаров в заказе</span>
+                        <span>3 товара</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Способ оплаты</span>
+                        <span>Оплата банковской картой</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Способ доставки</span>
+                        <span>Доставка курьером СДЭК</span>
+                    </div>
+                    <div class="orders__col">
+                        <div class="status color-red">
+                            <span class="orders__label">Статус</span>
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            <span>Ожидает обработки</span>
+                        </div>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Сумма</span>
+                        <span>2 500 руб.</span>
+                    </div>
+                </div>
+                <div class="orders__row">
+                    <div class="orders__col">
+                        <span class="orders__label">№ Заказа</span>
+                        <svg class="i-icon">
+                            <use xlink:href="#icon-orders"></use>
+                        </svg>
+                        <span>№ 123456</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Дата заказа</span>
+                        <span>12.12.2019</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Товаров в заказе</span>
+                        <span>3 товара</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Способ оплаты</span>
+                        <span>Оплата банковской картой</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Способ доставки</span>
+                        <span>Доставка курьером СДЭК</span>
+                    </div>
+                    <div class="orders__col">
+                        <div class="status color-orange">
+                            <span class="orders__label">Статус</span>
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            <span>В обработке</span>
+                        </div>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Сумма</span>
+                        <span>2 500 руб.</span>
+                    </div>
+                </div>
+                <div class="orders__row">
+                    <div class="orders__col">
+                        <span class="orders__label">№ Заказа</span>
+                        <svg class="i-icon">
+                            <use xlink:href="#icon-orders"></use>
+                        </svg>
+                        <span>№ 123456</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Дата заказа</span>
+                        <span>12.12.2019</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Товаров в заказе</span>
+                        <span>3 товара</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Способ оплаты</span>
+                        <span>Оплата банковской картой</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Способ доставки</span>
+                        <span>Доставка курьером СДЭК</span>
+                    </div>
+                    <div class="orders__col">
+                        <div class="status color-green">
+                            <span class="orders__label">Статус</span>
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            <span>Заказ передан в службу доставки и находится в пути</span>
+                        </div>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Сумма</span>
+                        <span>2 500 руб.</span>
+                    </div>
+                </div>
+                <div class="orders__row">
+                    <div class="orders__col">
+                        <span class="orders__label">№ Заказа</span>
+                        <svg class="i-icon">
+                            <use xlink:href="#icon-orders"></use>
+                        </svg>
+                        <span>№ 123456</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Дата заказа</span>
+                        <span>12.12.2019</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Товаров в заказе</span>
+                        <span>3 товара</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Способ оплаты</span>
+                        <span>Оплата банковской картой</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Способ доставки</span>
+                        <span>Доставка курьером СДЭК</span>
+                    </div>
+                    <div class="orders__col">
+                        <div class="status color-green">
+                            <span class="orders__label">Статус</span>
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            <span>Заказ готов в пункте получения</span>
+                        </div>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Сумма</span>
+                        <span>2 500 руб.</span>
+                    </div>
+                </div>
+                <div class="orders__row">
+                    <div class="orders__col">
+                        <span class="orders__label">№ Заказа</span>
+                        <svg class="i-icon">
+                            <use xlink:href="#icon-orders"></use>
+                        </svg>
+                        <span>№ 123456</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Дата заказа</span>
+                        <span>12.12.2019</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Товаров в заказе</span>
+                        <span>3 товара</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Способ оплаты</span>
+                        <span>Оплата банковской картой</span>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Способ доставки</span>
+                        <span>Доставка курьером СДЭК</span>
+                    </div>
+                    <div class="orders__col">
+                        <div class="status color-green">
+                            <span class="orders__label">Статус</span>
+                            <svg class="i-icon">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            <span>Выполнен</span>
+                        </div>
+                    </div>
+                    <div class="orders__col">
+                        <span class="orders__label">Сумма</span>
+                        <span>2 500 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- require("../components/elements/pagination.ejs")() %>
+    </div>
+</section>

@@ -1,0 +1,55 @@
+<%
+    <!-- Даты последнего изменения файлов, чтобы перекачивались закешированные -->
+    var files = [
+        {
+            'name': 'lastCssDate',
+            'file': './assets/main.css'
+        },
+        {
+            'name': 'lastSvgDate',
+            'file': './assets/icons.svg'
+        },
+        {
+            'name': 'lastJsDate',
+            'file': './assets/bundle.js'
+        }
+    ];
+
+    locals.fileDate = locals.require('fileDate.js')(locals);
+
+    files.forEach((item) => {
+        let lastTimeChange = locals.fileDate(item.file);
+        locals[item.name] = Date.parse(lastTimeChange);
+    });
+%>
+
+<!doctype html>
+
+<!-- (c) Digital Element || http://www.d-element.ru/ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- locals.blocks.title %></title>
+    <link href="./css/app.css?<%= locals.lastCssDate %>" type="text/css"  rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <script>
+        var INLINE_SVG_REVISION = <%- locals.lastSvgDate %>;
+    </script>
+
+    <div class="flow-container">
+        <%- locals.include('layouts/header.ejs') %>
+
+        <div class="content">
+            <%- locals.body %>
+        </div>
+
+        <%- locals.include('layouts/footer.ejs') %>
+    </div>
+    <script src="./js/main.js?<%= locals.lastJsDate %>" type="text/javascript"></script>
+</body>
+</html>
+

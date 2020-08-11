@@ -1,0 +1,67 @@
+@import "../media.css";
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+.socials__label {
+    margin-left: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+}
+.socials-list {
+    display: flex;
+    align-items: center;
+    margin: 0 -10px;
+}
+.socials-list__item {
+    padding: 0 10px;
+    &--vk {
+        .socials-list__link {
+            svg {
+                width: 21px;
+                height: 12px;
+            }
+            &--small {
+                svg {
+                    @media(--mobile-xs) {
+                        width: 13px;
+                        height: 8px;
+                    }
+                }
+            }
+        }
+    }
+    &--in {
+        .socials-list__link {
+            svg {
+                width: 19px;
+                height: 19px;
+            }
+            &--small {
+                svg {
+                    @media(--mobile-xs) {
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+.socials-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--c-orange);
+    border-radius: 100%;
+    &--small {
+        @media(--mobile-xs) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

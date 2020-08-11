@@ -1,0 +1,22 @@
+@import "../media.css";
+
+.page-head {
+    position: relative;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.page-head__title {
+    position: relative;
+    text-align: center;
+    @media(--tablet) {
+        .h2 {
+            font-size: 30px;
+        }
+    }
+}
+.page-head__subtitle {
+    margin-top: 30px;
+    @media(--mobile-xs) {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,15 @@
+<% const data = {
+    'title': 'Главная',
+    'flowContainerClass' : 'flow-container--main'
+} %>
+
+<%- require("../layouts/header.ejs")(data) %>
+<%- require("../section/hero.ejs")() %>
+<%- require("../section/page-slider-scroll-magic.ejs")() %>
+<%-/* require("../section/scroll-new.ejs")() */%>
+<%- require("../section/main-catalog.ejs")() %>
+<%- require("../section/assemble.ejs")() %>
+<%- require("../section/birthday.ejs")() %>
+<%- require("../section/main-stocks.ejs")() %>
+<%- require("../section/seo.ejs")() %>
+<%- require("../layouts/footer.ejs")() %>

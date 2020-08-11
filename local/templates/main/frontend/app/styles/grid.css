@@ -1,0 +1,65 @@
+@import "variables.css";
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.grid__col {
+    width: 100%;
+    min-width: 100%;
+    padding: 0 15px;
+    font-size: 16px;
+    &--1 {
+        width: 8.33333333333%;
+        min-width: 8.33333333333%;
+    }
+    &--2 {
+        width: 16.6666666667%;
+        min-width: 16.6666666667%;
+    }
+    &--3 {
+        width: 25%;
+        min-width: 25%;
+    }
+    &--4 {
+        width: 33.3333333333%;
+        min-width: 33.3333333333%;
+    }
+    &--5 {
+        width: 41.6666666667%;
+        min-width: 41.6666666667%;
+    }
+    &--6 {
+        width: 50%;
+        min-width: 50%;
+    }
+    &--7 {
+        width: 58.3333333333%;
+        min-width: 58.3333333333%;
+    }
+    &--8 {
+        width: 66.6666666667%;
+        min-width: 66.6666666667%;
+    }
+    &--9 {
+        width: 75%;
+        min-width: 75%;
+        @media(max-width: 1200px) {
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+    &--10 {
+        width: 83.3333333333%;
+        min-width: 83.3333333333%;
+    }
+    &--11 {
+        width: 91.6666666667%;
+        min-width: 91.6666666667%;
+    }
+    &--12 {
+        width: 100%;
+        min-width: 100%;
+    }
+}

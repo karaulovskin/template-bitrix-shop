@@ -1,0 +1,30 @@
+<!-- (c) Digital Element || http://www.d-element.ru/ -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title><%=title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=61536017-f4a7-4aaf-a708-fa73ef88c02d&amp;lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+<div class="flow-container <%= flowContainerClass && flowContainerClass %>">
+    <div class="content">
+        <header class="header" data-header>
+            <section class="header__top">
+                <div class="container">
+                    <%- require("../components/header-nav.ejs")() %>
+                </div>
+            </section>
+            <section class="header__middle">
+                <div class="container">
+                    <%- require("../components/header-middle.ejs")() %>
+                </div>
+            </section>
+            <section class="header__bottom">
+                <div class="container">
+                    <%- require("../components/header-catalog.ejs")() %>
+                </div>
+            </section>
+            <%- require("../components/header-sticky.ejs")() %>
+        </header>

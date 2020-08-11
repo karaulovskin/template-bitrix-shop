@@ -1,0 +1,230 @@
+<section class="section section-card-about bg-white">
+    <div class="container">
+        <div class="page-head">
+            <div class="page-head__title">
+                <div class="h2 title-border">О товаре</div>
+            </div>
+        </div>
+        <div class="tabs" data-tabs>
+            <nav class="tabs-nav" data-tabs-nav>
+                <ul class="tabs-nav-list" data-tabs-nav-list>
+                    <li class="tabs-nav-list__item current" data-tabs-nav-item>
+                        <a href="#" class="tabs-nav-list__link" data-tabs-nav-toggle>О товаре</a>
+                    </li>
+                    <li class="tabs-nav-list__item" data-tabs-nav-item>
+                        <a href="#" class="tabs-nav-list__link" data-tabs-nav-toggle>Видео</a>
+                    </li>
+                    <li class="tabs-nav-list__item" data-tabs-nav-item>
+                        <a href="#" class="tabs-nav-list__link" data-tabs-nav-toggle>Доставка</a>
+                    </li>
+                    <li class="tabs-nav-list__item" data-tabs-nav-item>
+                        <a href="#" class="tabs-nav-list__link" data-tabs-nav-toggle>Наличие в магазинах</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="tabs-content" data-tabs-content>
+                <div class="tabs-content__item current" data-tabs-content-item>
+                    <div class="grid">
+                        <div class="grid__col grid__col--9">
+                            <div class="editor">
+                                <p>
+                                    Это не просто очередной магазин, а проект, возникший из детских желаний и фантазий. Особенность наших игрушек в том, что ребенок может их сделать сам!
+                                </p>
+                                <p>
+                                    Создавая себе игрушку, у малыша появляется желание творить чудеса. Еще бы, ведь он выбирает образ будущего друга, которого с его участием наполняют, «оживляют» вкладывая в него сердечко. И вот когда он готов можно сделать его красивым, особенным: одеть, обуть, выбрать запах и звук.
+                                </p>
+                                <p>
+                                    Дать имя и получить свидетельство о рождении, через полгода и паспорт. Mr.Mish причина для радости! Это не просто очередной магазин, а проект, возникший из детских желаний и фантазий. Особенность наших игрушек в том, что ребенок может их сделать сам! Создавая себе игрушку, у малыша появляется желание творить чудеса. Еще бы, ведь он выбирает образ будущего друга, которого с его участием наполняют, «оживляют» вкладывая в него сердечко. И вот когда он готов можно сделать его красивым, особенным: одеть, обуть, выбрать запах и звук. Дать имя и получить свидетельство о рождении, через полгода и паспорт. Mr.Mish причина для радости!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col--3">
+                            <div class="specifications">
+                                <% const listSpecific = [
+                                    {
+                                        key: 'Тип игрушки:',
+                                        val: 'Мишки'
+                                    },
+                                    {
+                                        key: 'Бренд:',
+                                        val: 'Mr. Mish'
+                                    },
+                                    {
+                                        key: 'Материал:',
+                                        val: 'Хлопок'
+                                    },
+                                    {
+                                        key: 'Наполнитель:',
+                                        val: 'Холофайбер'
+                                    },
+                                    {
+                                        key: 'Тип игрушки:',
+                                        val: 'Мишки'
+                                    },
+                                    {
+                                        key: 'Бренд:',
+                                        val: 'Mr. Mish'
+                                    },
+                                    {
+                                        key: 'Материал:',
+                                        val: 'Хлопок'
+                                    }
+                                ]%>
+                                <% listSpecific.forEach(function (item) { %>
+                                    <div class="specifications-item">
+                                        <div class="specifications-item__key"><%= item.key %></div>
+                                        <div class="specifications-item__val"><%= item.val %></div>
+                                    </div>
+                                <% }) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-content__item" data-tabs-content-item>
+                    <div class="tabs-content__head">
+                        <div class="h3 title-border">Видео</div>
+                    </div>
+                    <div class="video-wrapper">
+                        <div class="video" data-video>
+                            <a class="video__link" href="https://www.youtube.com/embed/7NmaYKLzWBQ" data-video-link>
+                                <picture>
+                                    <img class="video__media" src="./images/content/video_picture.jpg" alt="" data-video-media>
+                                </picture>
+                            </a>
+                            <button class="video__button" type="button" aria-label="Запустить видео" data-video-button>
+                                <svg class="video__play i-icon">
+                                    <use xlink:href="#icon-play"></use>
+                                </svg>
+                                <svg class="video__play--mobile i-icon">
+                                    <use xlink:href="#icon-play"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video-desc">
+                        <div class="editor editor--center">
+                            <p>
+                                Особенность наших игрушек в том, что ребенок может их сделать сам! Создавая себе игрушку, у малыша появляется желание творить чудеса. Еще бы, ведь он выбирает образ будущего друга, которого с его участием наполняют, «оживляют» вкладывая в него сердечко.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-content__item" data-tabs-content-item>
+                    <div class="tabs-content__head">
+                        <div class="h3 title-border">Доставка</div>
+                    </div>
+                    <%- require('../components/elements/select-delivery.ejs')()%>
+                    <div class="specifications-table">
+                        <div class="specifications-table-item">
+                            <div class="specifications-table-item__key">
+                                <span>Доставка службой СДЭК (до пункта выдачи)</span>
+                            </div>
+                            <div class="specifications-table-item__val">360 р</div>
+                        </div>
+                        <div class="specifications-table-item">
+                            <div class="specifications-table-item__key">
+                                <span>Доставка службой СДЭК (до двери)</span>
+                            </div>
+                            <div class="specifications-table-item__val">440 р</div>
+                        </div>
+                        <div class="specifications-table-item">
+                            <div class="specifications-table-item__key">
+                                <span>Доставка  почтой России</span>
+                            </div>
+                            <div class="specifications-table-item__val">300 р</div>
+                        </div>
+                        <div class="specifications-table-item">
+                            <div class="specifications-table-item__key">
+                                <span>Самовывоз из </span>
+                                <a href="#">магазина</a>
+                            </div>
+                            <div class="specifications-table-item__val">0 р</div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="editor">
+                        <p>
+                            Способы доставки в Ваш город уточняйте у менеджера магазина.
+                        </p>
+                    </div>
+                    -->
+                </div>
+                <div class="tabs-content__item" data-tabs-content-item>
+                    <div class="tabs-content__head">
+                        <div class="h3 title-border">Наличие</div>
+                    </div>
+                    <div class="availability-nav">
+                        <div class="circle-list circle-list--availability">
+                            <div class="circle-list__item current">
+                                <div class="circle-item circle-item--availability">
+                                    <a href="#" class="circle-item__link">
+                                        <i class="circle-item__icon circle-item__icon--small">
+                                            <svg class="i-icon i-icon--availability">
+                                                <use xlink:href="#icon-point"></use>
+                                            </svg>
+                                        </i>
+                                        <span class="circle-item__label circle-item__label--uppercase">Москва</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="circle-list__item">
+                                <div class="circle-item circle-item--availability">
+                                    <a href="#" class="circle-item__link">
+                                        <i class="circle-item__icon circle-item__icon--small">
+                                            <svg class="i-icon i-icon--availability">
+                                                <use xlink:href="#icon-point"></use>
+                                            </svg>
+                                        </i>
+                                        <span class="circle-item__label circle-item__label--uppercase">Краснодар</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="availability-table">
+                        <% const listAvailability = [
+                            {
+                                many: 'availability-table-item__status--much',
+                                text: 'Много'
+                            },
+                            {
+                                many: 'availability-table-item__status--much',
+                                text: 'Много'
+                            },
+                            {
+                                many: 'availability-table-item__status--much',
+                                text: 'Много'
+                            },
+                            {
+                                many: 'availability-table-item__status--much',
+                                text: 'Много'
+                            },
+                            {
+                                many: 'availability-table-item__status--few',
+                                text: 'Мало'
+                            },
+                            {
+                                many: 'availability-table-item__status--order',
+                                text: 'Под заказ'
+                            }
+                        ]%>
+                        <% listAvailability.forEach(function (item) { %>
+                            <div class="availability-table-item">
+                                <div class="availability-table-item__point">
+                                    ТРЦ Zеленопарк, вход H, пгт Ржавки, Московская область, 2-й микрорайон, ст20
+                                </div>
+                                <div class="availability-table-item__mode">10:00 - 22:00, Ежедневно</div>
+                                <div class="availability-table-item__status <%= item.many %>">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-heart"></use>
+                                    </svg>
+                                    <span><%= item.text %></span>
+                                </div>
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

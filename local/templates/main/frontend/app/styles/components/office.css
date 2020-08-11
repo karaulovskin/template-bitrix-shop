@@ -1,0 +1,111 @@
+@import "../media.css";
+
+.office-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.office-list__item {
+    padding: 15px;
+    width: 100%;
+    min-width: 100%;
+    &--6 {
+        width: 50%;
+        min-width: 50%;
+        @media(--mobile-s) {
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+}
+.office-item {
+    position: relative;
+    background-color: white;
+    &--main {
+        .office-item__content {
+            flex-direction: column;
+            padding: 54px 48px;
+            @media(--tablet-above) {
+                padding: 24px 20px;
+            }
+        }
+        .office-item__title {
+            width: 100%;
+            min-width: auto;
+            padding-bottom: 28px;
+            margin-bottom: 30px;
+            &:after {
+                top: auto;
+                left: 0;
+                right: auto;
+                bottom: 0;
+                width: 80px;
+                height: 1px;
+            }
+        }
+        .list-contacts__item:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+.office-item__content {
+    display: flex;
+    padding: 44px 48px;
+    @media(--tablet-above) {
+        padding: 24px 20px;
+    }
+    @media(--tablet) {
+        flex-direction: column;
+    }
+}
+.office-item__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 410px);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media(--mobile) {
+        display: none;
+    }
+}
+.office-item__title {
+    position: relative;
+    width: 199px;
+    min-width: 199px;
+    margin-right: 35px;
+    font-family: 'Playfair Display';
+    line-height: 1;
+    font-size: 30px;
+    color: var(--c-black);
+    @media(--tablet-above) {
+        margin-right: 25px;
+        font-size: 24px;
+    }
+    @media(--tablet) {
+        width: 100%;
+        min-width: auto;
+        padding-bottom: 28px;
+        margin-bottom: 30px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: var(--c-black);
+        @media(--tablet) {
+            top: auto;
+            left: 0;
+            right: auto;
+            bottom: 0;
+            width: 80px;
+            height: 1px;
+        }
+    }
+}

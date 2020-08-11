@@ -1,0 +1,43 @@
+<section class="section-shops">
+    <div class="container">
+        <div class="page-head">
+            <div class="page-head__title">
+                <div class="h2 title-border">Наши магазины</div>
+            </div>
+            <div class="page-head__subtitle">
+                <div class="availability-nav availability-nav--center">
+                    <div class="circle-list circle-list--availability">
+                        <div class="circle-list__item current">
+                            <div class="circle-item circle-item--availability">
+                                <a href="#" class="circle-item__link">
+                                    <i class="circle-item__icon circle-item__icon--small">
+                                        <svg class="i-icon i-icon--availability">
+                                            <use xlink:href="#icon-point"></use>
+                                        </svg>
+                                    </i>
+                                    <span class="circle-item__label circle-item__label--uppercase">Москва</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="circle-list__item">
+                            <div class="circle-item circle-item--availability">
+                                <a href="#" class="circle-item__link">
+                                    <i class="circle-item__icon circle-item__icon--small">
+                                        <svg class="i-icon i-icon--availability">
+                                            <use xlink:href="#icon-point"></use>
+                                        </svg>
+                                    </i>
+                                    <span class="circle-item__label circle-item__label--uppercase">Краснодар</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="shops">
+            <%- require("../components/elements/shop-list.ejs")()%>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,10 @@
+<% const data = {
+    'title': 'Карточка товара',
+    'flowContainerClass' : ''
+} %>
+
+<%- require("../layouts/header.ejs")(data) %>
+<%- require("../section/card.ejs")() %>
+<%- require("../section/card-about.ejs")() %>
+<%- require("../section/card-catalog.ejs")() %>
+<%- require("../layouts/footer.ejs")() %>

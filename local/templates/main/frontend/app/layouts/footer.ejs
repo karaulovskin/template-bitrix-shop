@@ -1,0 +1,38 @@
+        </div>
+        <footer class="footer">
+             <section class="footer__top">
+                 <div class="container container--min">
+                    <%- require("../components/footer-contacts.ejs")() %>
+                 </div>
+             </section>
+             <section class="footer__middle">
+                 <div class="container container--min">
+                     <%- require("../components/footer-content.ejs")() %>
+                 </div>
+             </section>
+             <section class="footer__bottom">
+                 <div class="container">
+                    <%- require("../components/footer-nav.ejs")() %>
+                 </div>
+             </section>
+        </footer>
+        </div>
+        <%- require('./mobile-menu.ejs')() %>
+        <%- require('./mobile-filter.ejs')() %>
+        <%- require('./modals.ejs')() %>
+        <div class="slide-up">
+            <a href="#" class="slide-up__link" data-slide-up>
+                <span class="slide-up__circle">
+                    <svg class="i-icon">
+                        <use xlink:href="#icon-slide-up"></use>
+                    </svg>
+                </span>
+                <div class="slide-up__text">Наверх</div>
+            </a>
+        </div>
+        <div class="overlay"></div>
+        <div class="preloader" data-preloader>
+            <div></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<section class="section bg-beige-bright">
+    <div id="stocksElement1" class="stocks-element">
+        <svg class="i-icon">
+            <use xlink:href="#icon-stocksElement1"></use>
+        </svg>
+    </div>
+    <div id="stocksElement2" class="stocks-element">
+        <svg class="i-icon">
+            <use xlink:href="#icon-stocksElement2"></use>
+        </svg>
+    </div>
+    <div id="stocksElement3" class="stocks-element">
+        <svg class="i-icon">
+            <use xlink:href="#icon-stocksElement3"></use>
+        </svg>
+    </div>
+    <div id="stocksElement4" class="stocks-element">
+        <svg class="i-icon">
+            <use xlink:href="#icon-stocksElement4"></use>
+        </svg>
+    </div>
+    <div id="stocksElement5" class="stocks-element">
+        <svg class="i-icon">
+            <use xlink:href="#icon-stocksElement5"></use>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="content-head">
+            <%- require("../components/elements/breadcrumbs.ejs")() %>
+            <div class="content-head__title">
+                <div class="h1 title-border">Доставка и оплата</div>
+            </div>
+        </div>
+        <div class="page-head">
+            <div class="page-head__title">
+                <div class="h2">Способы доставки</div>
+            </div>
+        </div>
+        <div class="delivery-list">
+            <div class="delivery-list__item">
+                <div class="delivery-item">
+                    <div class="delivery-item__left">
+                        <picture class="picture-heart">
+                            <img src="./images/content/delivery_1.jpg" alt="" class="picture-heart__img">
+                            <svg width="0" height="0">
+                                <defs>
+                                    <clipPath id="myClip">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M88.5 19.2874C78.8535 8.03124 64.074 0.908203 48.675 0.908203C21.417 0.908203 0 22.1894 0 49.2745C0 82.5153 30.09 109.6 75.6675 150.756L88.5 162.276L101.332 150.668C146.91 109.6 177 82.5153 177 49.2745C177 22.1894 155.583 0.908203 128.325 0.908203C112.926 0.908203 98.1465 8.03124 88.5 19.2874Z"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </picture>
+                    </div>
+                    <div class="delivery-item__right">
+                        <div class="delivery-item__title">Самовывоз из магазина</div>
+                        <div class="delivery-item__desc">
+                            <p>
+                                Вы можете забрать товар из ближайшего к вам магазина. Со списком всех магазинов можно ознакомиться на странице "Контакты". При заказе на сайте выберите удобный розничный магазин, в котором хотите забрать товар самостоятельно.
+                            </p>
+                            <p>
+                                О готовности вашего заказа вы будете уведомлены по электронной почте.
+                            </p>
+                            <p>
+                                Также, вы всегда самостоятельно можете проверить статус заказа в <a href="#">Личном кабинете</a> на сайте.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery-list__item">
+                <div class="delivery-item">
+                    <div class="delivery-item__left">
+                        <picture class="picture-heart">
+                            <img src="./images/content/delivery_2.jpg" alt="" class="picture-heart__img">
+                        </picture>
+                    </div>
+                    <div class="delivery-item__right">
+                        <div class="delivery-item__title">Доставка по:</div>
+                        <%- require("../components/delivery-city.ejs")()%>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-head">
+            <div class="page-head__title">
+                <div class="h2">Способы оплаты</div>
+            </div>
+            <div class="page-head__subtitle">
+                <%- require("../components/payment.ejs")() %>
+            </div>
+        </div>
+        <div class="delivery-list">
+            <div class="delivery-list__item">
+                <div class="delivery-item">
+                    <div class="delivery-item__left">
+                        <picture class="picture-heart">
+                            <img src="./images/content/delivery_3.jpg" alt="" class="picture-heart__img">
+                        </picture>
+                    </div>
+                    <div class="delivery-item__right">
+                        <div class="delivery-item__title">Банковской картой на сайте</div>
+                        <div class="delivery-item__desc">
+                            <p>
+                                Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку "Оплата заказа банковской картой". Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure для проведения платежа также может потребоваться ввод специального пароля.
+                            </p>
+                            <p>
+                                Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем МИР, Visa Int., MasterCard Europe Sprl, JCB.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery-list__item">
+                <div class="delivery-item">
+                    <div class="delivery-item__left">
+                        <picture class="picture-heart">
+                            <img src="./images/content/delivery_4.jpg" alt="" class="picture-heart__img">
+                        </picture>
+                    </div>
+                    <div class="delivery-item__right">
+                        <div class="delivery-item__title">Наличными / картой при получении</div>
+                        <div class="delivery-item__desc">
+                            <p>
+                                Вы оплачиваете заказ курьеру при получении. Все необходимые финансовые документы курьер вручит вам вместе с заказом. Эта форма оплаты действует только при условии поставки товаров со склада, позиции на заказ поставляются только после предварительной предоплаты всего заказа.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery-list__item">
+                <div class="delivery-item">
+                    <div class="delivery-item__left">
+                        <picture class="picture-heart">
+                            <img src="./images/content/delivery_5.jpg" alt="" class="picture-heart__img">
+                        </picture>
+                    </div>
+                    <div class="delivery-item__right">
+                        <div class="delivery-item__title">Счет на оплату</div>
+                        <div class="delivery-item__desc">
+                            <p>
+                                Вы оплачиваете заказ курьеру при получении. Все необходимые финансовые документы курьер вручит вам вместе с заказом. Эта форма оплаты действует только при условии поставки товаров со склада, позиции на заказ поставляются только после предварительной предоплаты всего заказа.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

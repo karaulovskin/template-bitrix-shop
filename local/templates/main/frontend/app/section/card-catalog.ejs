@@ -1,0 +1,416 @@
+<section class="section-catalog">
+    <div class="container">
+        <div class="slider-catalog-wrapper">
+            <div class="slider-head">
+                <div class="slider-head__title">
+                    <div class="h2">Собери комплект!</div>
+                </div>
+                <div class="tabs-nav" data-mobile-slider>
+                    <ul class="tabs-nav-list" data-mobile-slider-list>
+                        <% const ajaxList = [
+                            {
+                                title: 'Одежда для игрушек',
+                                boolean: true
+                            },
+                            {
+                                title: 'Обувь для игрушек'
+                            },
+                            {
+                                title: 'Аксессуары'
+                            },
+                            {
+                                title: 'Ароматы'
+                            },
+                            {
+                                title: 'Звуки'
+                            }
+                        ]%>
+                        <% ajaxList.forEach(function (item) { %>
+                            <li class="tabs-nav-list__item <%= item.boolean ? 'current' : '' %>" data-mobile-slider-item>
+                                <a href="#" class="tabs-nav-list__link"><%= item.title %></a>
+                            </li>
+                        <% }) %>
+                    </ul>
+                </div>
+            </div>
+            <div id="sliderHit" class="slider-catalog">
+            <div class="slider-catalog__head">
+                <div class="swiper-button-prev">
+                    <svg class="i-icon">
+                        <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                </div>
+                <div class="swiper-button-next">
+                    <svg class="i-icon">
+                        <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="slider-catalog__container swiper-container">
+                <div class="slider-catalog__wrapper swiper-wrapper">
+                    <div class="slider-catalog__slide swiper-slide">
+                        <div class="catalog-item">
+                            <div class="icon-info-list">
+                                <div class="icon-info-list__item">
+                                    <div class="icon-info icon-info--hit">Хит</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price">
+                                    <div class="catalog-item-price__value">1 000 р</div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-catalog__slide swiper-slide">
+                        <div class="catalog-item">
+                            <div class="icon-info-list">
+                                <div class="icon-info-list__item">
+                                    <div class="icon-info icon-info--hit">Хит</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price">
+                                    <div class="catalog-item-price__value">1 000 р</div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-catalog__slide swiper-slide">
+                        <div class="catalog-item">
+                            <div class="icon-info-list">
+                                <div class="icon-info-list__item">
+                                    <div class="icon-info icon-info--hit">Хит</div>
+                                </div>
+                                <div class="icon-info-list__item">
+                                    <div class="icon-info icon-info--discount">-15%</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price">
+                                    <div class="catalog-item-price__value catalog-item-price__value--sale">1 200 р</div>
+                                    <div class="catalog-item-price__discount">999 р</div>
+                                </div>
+                                <a href="#coming" class="catalog-item__coming" data-modal-open>Сообщить<br> о поступлении</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-catalog__slide swiper-slide">
+                        <div class="catalog-item">
+                            <div class="icon-info-list">
+                                <div class="icon-info-list__item">
+                                    <div class="icon-info icon-info--hit">Хит</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price">
+                                    <div class="catalog-item-price__value">1 000 р</div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-catalog__slide swiper-slide">
+                        <div class="catalog-item">
+                            <div class="icon-info-list">
+                                <div class="icon-info-list__item">
+                                    <div class="icon-info icon-info--hit">Хит</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price">
+                                    <div class="catalog-item-price__value">1 000 р</div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-catalog__pagination swiper-pagination"></div>
+            </div>
+        </div>
+        </div>
+        <div id="sliderSmall" class="slider-catalog">
+            <div class="slider-catalog__head">
+                <div class="swiper-button-prev">
+                    <svg class="i-icon">
+                        <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                </div>
+                <div class="h2">Ранее вы смотрели</div>
+                <div class="swiper-button-next">
+                    <svg class="i-icon">
+                        <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="slider-catalog__container swiper-container">
+                <div class="slider-catalog__wrapper swiper-wrapper">
+                    <div class="slider-catalog__slide slider-catalog__slide--small swiper-slide">
+                        <div class="catalog-item catalog-item--small">
+                            <div class="icon-info-list icon-info-list--small">
+                                <div class="icon-info-list__item">
+                                    <div class="icon-info icon-info--small icon-info--new">Хит</div>
+                                </div>
+                                <div class="icon-info-list__item">
+                                    <div class="icon-info icon-info--small icon-info--discount">-15%</div>
+                                </div>
+                                <div class="icon-info-list__item">
+                                    <div class="icon-info icon-info--small icon-info--new">New</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture catalog-item-picture--small">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name catalog-item__name--small">Куколка Фия-рюкзак в платье</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price catalog-item-price--small">
+                                    <div class="catalog-item-price__value">1 000 р</div>
+                                    <div class="catalog-item-price__discount"></div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-catalog__slide slider-catalog__slide--small swiper-slide">
+                        <div class="catalog-item catalog-item--small">
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture catalog-item-picture--small">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name catalog-item__name--small">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price catalog-item-price--small">
+                                    <div class="catalog-item-price__value">1 000 р</div>
+                                    <div class="catalog-item-price__discount"></div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-catalog__slide slider-catalog__slide--small swiper-slide">
+                        <div class="catalog-item catalog-item--small">
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture catalog-item-picture--small">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name catalog-item__name--small">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price catalog-item-price--small">
+                                    <div class="catalog-item-price__value catalog-item-price__value--sale">1 000 р</div>
+                                    <div class="catalog-item-price__discount">999 р</div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-catalog__slide slider-catalog__slide--small swiper-slide">
+                        <div class="catalog-item catalog-item--small">
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture catalog-item-picture--small">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name catalog-item__name--small">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price catalog-item-price--small">
+                                    <div class="catalog-item-price__value">500 р</div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-catalog__slide slider-catalog__slide--small swiper-slide">
+                        <div class="catalog-item catalog-item--small">
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture catalog-item-picture--small">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name catalog-item__name--small">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price catalog-item-price--small">
+                                    <div class="catalog-item-price__value">500 р</div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-catalog__slide slider-catalog__slide--small swiper-slide">
+                        <div class="catalog-item catalog-item--small">
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture catalog-item-picture--small">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name catalog-item__name--small">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price catalog-item-price--small">
+                                    <div class="catalog-item-price__value">500 р</div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-catalog__slide slider-catalog__slide--small swiper-slide">
+                        <div class="catalog-item catalog-item--small">
+                            <div class="catalog-item__top">
+                                <a href="#" class="catalog-item__link">
+                                    <div class="catalog-item__article">Арт: 123456</div>
+                                    <div class="catalog-item-picture catalog-item-picture--small">
+                                        <img src="./images/svg/catalog-heart.svg" alt="" class="catalog-item-picture__bg">
+                                        <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                    </div>
+                                    <div class="catalog-item__status">В наличии</div>
+                                    <div class="catalog-item__name catalog-item__name--small">Мишка</div>
+                                </a>
+                            </div>
+                            <div class="catalog-item__bottom">
+                                <div class="catalog-item-price catalog-item-price--small">
+                                    <div class="catalog-item-price__value">500 р</div>
+                                </div>
+                                <a href="#" class="catalog-item__basket">
+                                    <svg class="i-icon">
+                                        <use xlink:href="#icon-basket-catalog"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-catalog__pagination swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>

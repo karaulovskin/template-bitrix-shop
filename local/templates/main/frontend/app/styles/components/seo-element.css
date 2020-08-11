@@ -1,0 +1,34 @@
+@import "../media.css";
+
+.seo-element {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @media(--mobile) {
+        display: none;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#seoElement1 {
+    top: 0;
+    transform: translate(-556px, -20px);
+    width: 177px;
+    height: 163px;
+}
+#seoElement2 {
+    bottom: 0;
+    transform: translate(-376px, 15px);
+    width: 97px;
+    height: 89px;
+}
+#seoElement3 {
+    bottom: 0;
+    transform: translate(512px, -201px);
+    width: 266px;
+    height: 243px;
+}

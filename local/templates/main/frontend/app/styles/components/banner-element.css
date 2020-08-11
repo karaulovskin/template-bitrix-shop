@@ -1,0 +1,33 @@
+@import "../media.css";
+
+.banner-element {
+    position: absolute;
+    @media(--mobile) {
+        display: none;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#bannerElement1 {
+    top: 0;
+    right: 100%;
+    transform: translate(-18px, -18px);
+    width: 83px;
+    height: 83px;
+}
+#bannerElement2 {
+    bottom: 0;
+    transform: translate(35px, 48px);
+    width: 57px;
+    height: 58px;
+}
+#bannerElement3 {
+    top: 0;
+    left: 100%;
+    transform: translate(37px, -56px);
+    width: 150px;
+    height: 157px;
+}

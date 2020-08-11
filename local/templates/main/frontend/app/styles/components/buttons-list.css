@@ -1,0 +1,7 @@
+@import '../media.css';
+
+.buttons-list__item {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}

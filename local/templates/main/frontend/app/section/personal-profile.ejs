@@ -1,0 +1,96 @@
+<section class="bg-beige-bright">
+    <div class="container">
+        <div class="content-head">
+            <%- require("../components/elements/breadcrumbs.ejs")() %>
+            <div class="content-head__title">
+                <div class="h1">Мой профиль</div>
+            </div>
+            <div class="content-head__subtitle">
+                <nav class="tabs-nav">
+                    <ul class="tabs-nav-list tabs-nav-list--big-border">
+                        <li class="tabs-nav-list__item current">
+                            <a href="#" class="tabs-nav-list__link">Мои данные</a>
+                        </li>
+                        <li class="tabs-nav-list__item">
+                            <a href="#" class="tabs-nav-list__link">Мои заказы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="logout">
+                    <a href="#" class="logout__link">
+                        <span>Выйти</span>
+                        <svg class="i-icon">
+                            <use xlink:href="#icon-logout"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-personal bg-white">
+    <div class="container container--min">
+        <div class="personal-data">
+            <form action="" class="form" data-form>
+                <div class="form-row">
+                    <div class="form-col form-col--6">
+                        <label class="label">
+                            <input type="text" class="input input--required" placeholder="Фамилия">
+                        </label>
+                    </div>
+                    <div class="form-col form-col--6">
+                        <label class="label">
+                            <input type="text" class="input input--required" placeholder="Имя">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col form-col--6">
+                        <label class="label">
+                            <input type="text" class="input" placeholder="Отчество">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col form-col--6">
+                        <label class="label">
+                            <input type="text" class="input input--required" placeholder="E-mail">
+                        </label>
+                    </div>
+                    <div class="form-col form-col--3">
+                        <label class="label">
+                            <input type="text" class="input input--required" placeholder="Телефон" data-input-required="phone">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col form-col--6">
+                        <label class="label">
+                            <input type="text" class="input" placeholder="Наименование организации">
+                        </label>
+                    </div>
+                    <div class="form-col form-col--3">
+                        <label class="label">
+                            <input type="text" class="input input--required" data-inputmask-inn placeholder="ИНН" data-input-required="UF_INN">
+                        </label>
+                    </div>
+                    <div class="form-col form-col--3">
+                        <label class="label">
+                            <input type="text" class="input" placeholder="БИК банка">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col form-col--6">
+                        <label class="label">
+                            <input type="text" class="input" placeholder="Расчетный счет">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-btns">
+                    <input type="submit" class="btn" value="Сохранить">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

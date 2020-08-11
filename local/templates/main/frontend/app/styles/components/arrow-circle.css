@@ -1,0 +1,33 @@
+@import "../media.css";
+
+.arrow-circle {
+    position: relative;
+    display: block;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    margin: auto;
+    border: 1px solid var(--c-black);
+    border-radius: 100%;
+    .i-icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 62px;
+        height: 29px;
+        fill: var(--c-black);
+    }
+    &--left {
+        .i-icon {
+            left: 42px;
+            transform: translateX(-23px);
+        }
+    }
+    &--right {
+        .i-icon {
+            right: -4px;
+            transform: translateX(-23px)rotate(180deg) ;
+        }
+    }
+}

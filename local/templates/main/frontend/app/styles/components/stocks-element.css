@@ -1,0 +1,69 @@
+@import '../media.css';
+
+.stocks-element {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @media(--mobile) {
+        display: none;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#stocksElement1 {
+    top: 0;
+    transform: translate(-497px, 240px);
+    transform: translate(-497px, 20px);
+    width: 425px;
+    height: 259px;
+}
+#stocksElement2 {
+    top: 0;
+    transform: translate(-604px, 235px);
+    transform: translate(-604px, 15px);
+    width: 97px;
+    height: 104px;
+}
+#stocksElement3 {
+    top: 0;
+    transform: translate(607px, 305px);
+    transform: translate(607px, 84px);
+    width: 255px;
+    height: 155px;
+}
+#stocksElement4 {
+    top: 0;
+    transform: translate(597px, 350px);
+    transform: translate(597px, 130px);
+    width: 38px;
+    height: 40px;
+}
+#stocksElement5 {
+    top: 0;
+    transform: translate(695px, 248px);
+    transform: translate(695px, 28px);
+    width: 47px;
+    height: 46px;
+}
+
+.section-stocks {
+    #stocksElement1 {
+        transform: translate(-497px, 123px);
+    }
+    #stocksElement2 {
+        transform: translate(-604px, 118px);
+    }
+    #stocksElement3 {
+        transform: translate(607px, 204px);
+    }
+    #stocksElement4 {
+        transform: translate(597px, 250px);
+    }
+    #stocksElement5 {
+        transform: translate(695px, 147px);
+    }
+}
