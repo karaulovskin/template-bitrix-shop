@@ -1,85 +1,8 @@
 @import "media.css";
+@import "variables.css";
 
-.editor-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 850px;
-    margin: 0 auto 60px;
-    padding: 42px 50px 75px;
-    background-color: white;
-    @media(--mobile) {
-        padding: 42px 35px 75px;
-    }
-    @media(--mobile-xs) {
-        padding: 20px 20px 75px;
-    }
-    &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -35px;
-        width: 62px;
-        height: 76px;
-        margin: auto;
-        background-image: url("../images/svg/title-mish.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
 .editor {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.9;
-    @media(--mobile-xs) {
-        font-size: 13px;
-    }
-    &--center {
-        text-align: center;
-    }
     h1, h2, h3, h4, h5, h6 {
-        margin-top: 38px;
-        margin-bottom: 12px;
-        &.align-left {
-            text-align: left;
-        }
-        &.title-border {
-            position: relative;
-            margin-top: 58px;
-            margin-bottom: 20px;
-            padding-bottom: 24px;
-            @media(--mobile-xs) {
-                margin-top: 32px;
-            }
-            &:after {
-                content: '';
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                width: 200px;
-                height: 1px;
-                margin: 0 auto;
-                background-color: var(--c-black);
-            }
-        }
-    }
-    dl {
-        display: flex;
-        align-items: center;
-        margin: 10px 0;
-        font-size: 14px;
-        @media(--mobile-xs) {
-            margin: 0;
-            font-size: 13px;
-        }
-    }
-    dt {
-        font-weight: 500;
-        color: var(--placeholder);
-    }
-    dd {
-        font-weight: 600;
-        margin-left: 4px;
+
     }
 }

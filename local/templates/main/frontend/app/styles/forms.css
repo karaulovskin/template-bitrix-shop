@@ -27,13 +27,6 @@ textarea {
     padding: 15px;
 }
 
-/*button.btn {*/
-/*    padding: 0;*/
-/*    background-color: transparent;*/
-/*    border: 0;*/
-/*    box-shadow: none;*/
-/*}*/
-
 input::-ms-clear {
     display: none;
 }
@@ -621,99 +614,17 @@ input::-ms-clear {
             border-color: var(--c-red);
         }
     }
-    &__label {
-        display: block;
-        line-height: 40px;
-        white-space: nowrap;
-        cursor: pointer;
-    }
-    &__bottom {
-        margin-top: 15px;
-        .form-note {
-            margin-left: 5px;
-            font-size: 12px;
-        }
-    }
 }
-
-.attach {
-    position: relative;
+.form-file__label {
+    display: block;
+    line-height: 40px;
+    white-space: nowrap;
+    cursor: pointer;
 }
-.attach__input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-
-    &:hover,
-    &:focus {
-        & + .attach__emulator {
-            .attach__label {
-                border-color: transparent;
-            }
-        }
-    }
-    &.invalid {
-        & + .attach__emulator {
-            .attach__label {
-                color: red;
-                border-color: red;
-            }
-        }
-    }
-}
-.attach__emulator {
-    display: flex;
-    align-items: center;
-}
-.attach__icon {
-    width: 22px;
-    height: 22px;
-}
-.attach__label {
-    margin-left: 15px;
-    margin-bottom: 4px;
-    font-size: 15px;
-    line-height: 1.2;
-    border-bottom: 1px solid black;
-    transition: .2s;
-
-    &.add-file {
-        border-color: transparent;
-    }
-}
-.attach__clear {
-    display: none;
-    position: relative;
-    width: 20px;
-    height: 20px;
-    margin-left: 6px;
-    background-color: transparent;
-    border: none;
-
-    &:before,
-    &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 16px;
-        height: 2px;
-        margin: auto;
-        background-color: black;
-    }
-    &:before {
-        transform: rotate(45deg);
-    }
-    &:after {
-         transform: rotate(-45deg);
-    }
-
-    &.active {
-        display: block;
+.form-file__bottom {
+    margin-top: 15px;
+    .form-note {
+        margin-left: 5px;
+        font-size: 12px;
     }
 }

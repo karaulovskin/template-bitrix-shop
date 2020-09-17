@@ -1,18 +1,8 @@
 @import "media.css";
 
 :root {
-    --c-black: #3C2C16;
-    --c-orange: #F19000;
-    --c-gray: #CACACA;
-    --c-gray2: #BBBBBB;
-    --c-red: #FD8479;
-    --c-green: #67B398;
-    --c-beige-bright: #FCEFDD;
-    --c-beige: #FFFAF3;
-    --c-brown: #BFB2A0;
+    --c-black: black;
 
-    --bg: #F3F1F2;
-    --bg-black: #1B1B1B;
     --border: #F0F0F0;
 
     --controlBg: #e3e3e3;

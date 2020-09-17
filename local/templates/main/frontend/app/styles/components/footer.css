@@ -1,20 +1,5 @@
 @import "../media.css";
+@import "../variables.css";
 
-.footer__top {
-    background-color: var(--c-beige);
-}
-.footer__middle {
-    position: relative;
-    padding: 100px 0 30px;
-    background: linear-gradient(90deg, #FFE9CA 1.8%, #FFAD98 98.73%);
-    @media(--mobile-xs) {
-        padding: 20px 0 30px;
-    }
-}
-.footer__bottom {
-    padding: 25px 0 21px;
-    background-color: white;
-    @media(--tablet-above) {
-        padding: 0;
-    }
+.footer {
 }

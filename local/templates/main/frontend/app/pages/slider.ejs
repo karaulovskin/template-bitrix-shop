@@ -3,4 +3,7 @@
     'flowContainerClass' : ''
 } %>
 
-<%- require("../section/page-slider.ejs")() %>
+<%- require("../layouts/header.ejs")(data) %>
+<h1>Слайдер</h1>
+<%- require("../section/slider.ejs")() %>
+<%- require("../layouts/footer.ejs")() %>

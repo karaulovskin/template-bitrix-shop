@@ -10,9 +10,6 @@ html {
     font-size: 14px;
     line-height: 1.24;
     font-weight: 400;
-    @media(--mobile-xs) {
-        font-size: 13px;
-    }
 }
 
 body {
@@ -24,14 +21,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     &.overflow-hidden {
-        overflow: hidden;
-        padding-right: 17px;
-        .header-sticky--fixed {
-            padding-right: 17px;
-        }
-    }
-    &.is-mobile-menu-open {
-         overflow: hidden;
+
     }
 }
 
@@ -45,123 +35,51 @@ body {
     min-height: inherit;
     overflow-x: hidden;
     z-index: 3;
-    &--main {
-        .h1 {
-            @media(--mobile-xs) {
-                font-size: 35px;
-            }
-        }
-    }
 }
 
 .content {
     position: relative;
     display: block;
     flex: 1 0 0;
-    /*background-color: #F9F9F9;*/
-}
-
-.content-description {
-    margin-bottom: 45px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
-    @media (--mobile-xs) {
-        margin-bottom: 27px;
-    }
 }
 
 .container {
     max-width: 1330px;
     margin: auto;
     padding: 0 20px;
-    &--min {
-        max-width: 890px;
-    }
-    @media (--tablet) {
-        padding: 0 20px;
-    }
-    @media (--mobile-xs) {
-        padding: 0 17px;
-    }
-}
-
-.title-border {
-    position: relative;
-    margin-bottom: 20px!important;
-    padding-bottom: 26px;
-    font-size: 40px;
-    @media(--mobile-xs) {
-        font-size: 30px;
-    }
-    &:after {
-        content: '';
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        width: 200px;
-        height: 1px;
-        margin: 0 auto;
-        background-color: var(--c-black);
-        @media(--mobile-xs) {
-            width: 86px;
-        }
-    }
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
     font-family: 'Playfair Display';
     font-weight: normal;
     line-height: 1.24;
-    margin-top: 0;
-    margin-bottom: 0;
-    @media(--mobile-xs) {
-        line-height: 1.17;
-    }
 }
 
 h1, .h1 {
     font-size: 45px;
-    @media(--mobile-xs) {
-        font-size: 35px;
-    }
 }
 
 h2, .h2 {
     font-size: 40px;
-    @media(--mobile-xs) {
-        font-size: 30px;
-    }
 }
 
 h3, .h3 {
     font-size: 30px;
-    @media(--mobile-xs) {
-        font-size: 22px;
-    }
 }
 
 h4, .h4 {
     font-size: 24px;
-    @media(--mobile-xs) {
-        font-size: 20px;
-    }
 }
 
 h5, .h5 {
     font-size: 20px;
-    @media(--mobile-xs) {
-        font-size: 18px;
-    }
 }
 
 h6, .h6 {
     font-size: 19px;
-    @media(--mobile-xs) {
-        font-size: 17px;
-    }
 }
 
 img {
@@ -222,11 +140,11 @@ ul {
         &::before {
             content: '';
             position: absolute;
-            top: 0.5em;
+            top: 0.7em;
             left: 0;
-            width: 14px;
-            height: 13px;
-            background-image: url("../images/svg/heart_orange.svg");
+            width: 8px;
+            height: 8px;
+            background-color: black;
             border-radius: 100%;
         }
     }
@@ -240,9 +158,6 @@ ol {
     > li {
         position: relative;
         font-size: 14px;
-        @media (--mobile-xs) {
-            font-size: 13px;
-        }
         &::before {
             counter-increment: list;
             content: counter(list) ".";
@@ -251,10 +166,6 @@ ol {
             left: 0;
             font-family: 'Playfair Display';
             font-size: 24px;
-            color: var(--c-orange);
-            @media (--mobile-xs) {
-                font-size: 22px;
-            }
         }
         ol {
             counter-reset: sublist 0;

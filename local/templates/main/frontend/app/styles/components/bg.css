@@ -1,9 +1,0 @@
-.bg-beige-bright {
-    background-color: var(--c-beige-bright);
-}
-.bg-white {
-    background-color: white;
-}
-.bg-gradient {
-    background: linear-gradient(90deg, #FFE9CA 1.8%, #FFD5CA 98.73%);
-}

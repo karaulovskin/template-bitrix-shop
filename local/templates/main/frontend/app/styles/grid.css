@@ -45,10 +45,6 @@
     &--9 {
         width: 75%;
         min-width: 75%;
-        @media(max-width: 1200px) {
-            width: 100%;
-            min-width: 100%;
-        }
     }
     &--10 {
         width: 83.3333333333%;

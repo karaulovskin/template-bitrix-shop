@@ -1,0 +1,46 @@
+<section>
+    <div class="container">
+        <div id="sliderHit" class="slider">
+            <div class="slider__container swiper-container">
+                <div class="slider__wrapper swiper-wrapper">
+                    <% const list = [
+                        {}, {}, {}, {}, {}, {}
+                    ] %>
+
+                    <% list.forEach(function (item) { %>
+                        <div class="slider__slide swiper-slide">
+                            <div class="catalog-item">
+                                <div class="icon-info-list">
+                                    <div class="icon-info-list__item">
+                                        <div class="icon-info icon-info--hit">Хит</div>
+                                    </div>
+                                </div>
+                                <div class="catalog-item__top">
+                                    <a href="#" class="catalog-item__link">
+                                        <div class="catalog-item__article">Арт: 123456</div>
+                                        <div class="catalog-item-picture">
+                                            <img src="./images/content/slider_item_1.png" alt="" class="catalog-item-picture__img">
+                                        </div>
+                                        <div class="catalog-item__status">Статус</div>
+                                        <div class="catalog-item__name">Имя</div>
+                                    </a>
+                                </div>
+                                <div class="catalog-item__bottom">
+                                    <div class="catalog-item-price">
+                                        <div class="catalog-item-price__value">1 000 р</div>
+                                    </div>
+                                    <a href="#" class="catalog-item__basket">
+                                        <svg class="i-icon">
+                                            <use xlink:href="#icon-basket-catalog"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+                <div class="slider-catalog__pagination swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
