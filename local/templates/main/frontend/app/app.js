@@ -27,6 +27,7 @@ import Modals from'./js/modals'
 import MapObject from'./js/map-object'
 import Sliders from'./js/sliders'
 import Search from'./js/search'
+import Search from'./js/debounce'
 // import MapObject from'./js/map'
 // import MapObject from'./js/scrollbar'
 // import Video from'./js/video'
@@ -57,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if('ontouchstart' in window || navigator.maxTouchPoints) $(document.body).addClass("touch");
 
+    App.Debounce = new Debounce();
     App.Utils = new Utils();
     App.SvgUse = new SvgUse();
     App.Forms = new Forms();
