@@ -27,7 +27,7 @@ import Modals from'./js/modals'
 import MapObject from'./js/map-object'
 import Sliders from'./js/sliders'
 import Search from'./js/search'
-import Search from'./js/debounce'
+import Debounce from'./js/debounce'
 // import MapObject from'./js/map'
 // import MapObject from'./js/scrollbar'
 // import Video from'./js/video'
@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     App.MapObject = new MapObject();
     App.Sliders = new Sliders();
     App.Search = new Search();
+    App.Debounce = new Debounce();
     // App.Map = new Map();
     // App.Video = new Video();
     // App.Scrollbar = new Scrollbar();
