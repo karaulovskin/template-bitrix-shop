@@ -6,7 +6,7 @@
     width: 100%;
     max-width: 630px;
     padding: 58px 0 14px;
-    background-color: var(--c-beige);
+    background-color: white;
     border: 20px solid white;
     overflow: visible;
 }
