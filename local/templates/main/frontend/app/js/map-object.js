@@ -7,7 +7,6 @@ export default class MapObject {
 
         ($('#map').length) ? ymaps.ready(init) : false;
 
-        const self = this;
         let myMap;
         let objectManager;
         let file = location.hostname === "localhost" || location.hostname === "127.0.0.1"
@@ -59,10 +58,7 @@ export default class MapObject {
             $(document).on('click', '[data-map-point-id]', function(e) {
                 e.preventDefault();
 
-                let
-                    $page = $('html, body'),
-                    $height = $('[data-header-sticky]').outerHeight(true),
-                    $pointId = $(this).attr('data-map-point-id');
+                let $pointId = $(this).attr('data-map-point-id');
 
                 setObjectManager($pointId);
 
@@ -71,17 +67,6 @@ export default class MapObject {
                 }).then(function(){
                     if(myMap.getZoom() > 16) myMap.setZoom(16);
                 });
-
-                setTimeout(function () {
-                    $page.animate({
-                            scrollTop: $('#map').offset().top - ($height ? $height : "")  + "px"
-                        },
-                        {
-                            duration: 700,
-                            easing: ''
-                        });
-                    return false;
-                }, 300);
             });
         }
     }

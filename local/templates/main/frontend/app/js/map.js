@@ -35,11 +35,10 @@ export default class Map {
                 clusterIcons: clusterIcons,
             });
 
-            $(self.point).each(function (index, el) {
+            $(self.point).each(function () {
                 let lon = $(this).attr('data-lon');
                 let lat = $(this).attr('data-lat');
-                // var id = $(this).attr('data-id');
-                // var content = $('.branches__item[data-id=' + id + ']').html();
+
                 let newPlacemark = new ymaps.Placemark([lon, lat], {
                     balloonContentHeader: "Балун метки",
                     balloonContentBody: "Содержимое <em>балуна</em> метки",
@@ -58,55 +57,6 @@ export default class Map {
             }).then(function(){
                 if(myMap.getZoom() > 16) myMap.setZoom(16);
             });
-
-            // переход по маркерам для descktop
-            $(document).on('click', self.point, function (e) {
-                e.preventDefault();
-
-                let $page = $('html, body'),
-                    $height = $('[data-header-sticky]').outerHeight(true),
-                    lon = $(this).data('lon'),
-                    lat = $(this).data('lat');
-
-                myMap.setCenter([lon, lat], 15);
-
-                setTimeout(function () {
-                    $page.animate({
-                            scrollTop: $('#map').offset().top - ($height ? $height : "")  + "px"
-                        },
-                        {
-                            duration: 700,
-                            easing: ''
-                        });
-                    return false;
-                }, 300);
-
-            });
         }
-    }
-
-    moveBetweenMarkers(lon, lat) {
-        $(document).on('click', self.point, function (e) {
-            e.preventDefault();
-
-            let $page = $('html, body'),
-                $height = $('[data-header-sticky]').outerHeight(true);
-                // lon = $(this).data('lon'),
-                // lat = $(this).data('lat');
-
-            myMap.setCenter([lon, lat], 15);
-
-            setTimeout(function () {
-                $page.animate({
-                        scrollTop: $('#map').offset().top - ($height ? $height : "")  + "px"
-                    },
-                    {
-                        duration: 700,
-                        easing: ''
-                    });
-                return false;
-            }, 300);
-
-        });
     }
 }
