@@ -15,7 +15,7 @@ module.exports = {
         'postcss-extend': {},
         'postcss-custom-media': {},
         // 'postcss-nesting': {},
-        // 'postcss-css-variables': {},   // Включаем, если нужен IE 11
+        'postcss-css-variables': {},   // Включаем, если нужен IE 11
         'postcss-color-function': {},
         'postcss-flexbugs-fixes': {},
         'postcss-input-style': {},
