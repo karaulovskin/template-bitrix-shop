@@ -6,11 +6,19 @@ export default class SvgUse {
         ( function( window, document )
         {
 
-            let file = location.hostname === "localhost" || location.hostname === "127.0.0.1"
-                ? './icons.svg'
-                : '/local/templates/main/frontend/assets/icons.svg'
-                // : '/bitrix/templates/main/icons.svg'
-            ;
+            let file = '';
+            switch (location.hostname) {
+                case `localhost`:
+                case `127.0.0.1`:
+                    file = './icons.svg';
+                    break;
+                case `work.iarga.ru`:
+                    file = `/${App.nameProject}/local/templates/main/frontend/assets/icons.svg`;
+                    break;
+                default:
+                    file = `/local/templates/main/frontend/assets/icons.svg`;
+                    break;
+            }
 
             const revision = window.INLINE_SVG_REVISION || false;
 

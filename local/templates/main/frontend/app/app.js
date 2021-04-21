@@ -40,6 +40,7 @@ import './styles/app.js';
 // Run components
 
 window.App = {
+    nameProject: 'example',
     debug: false,
     lang: 'ru'
 };
